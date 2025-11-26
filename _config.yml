@@ -1,0 +1,19 @@
+# 💻 _config.yml - The Divine Command for valhallainnovations.net
+# A. Site Settings (CRITICAL FOR CUSTOM DOMAIN/THEME FIX)
+url: "https://valhallainnovations.net" 
+baseurl: ""  # THIS MUST BE AN EMPTY STRING FOR APEX DOMAIN FIX
+
+title: "Valhalla Innovations - NET Site"
+email: "thor.whittaker@valhallainnovations.com" 
+description: >- # Site description for search engines
+  Secondary digital identity for Valhalla Innovations, focused on 
+  performance and built with zero latency.
+
+# B. Build Settings (Required for the Jekyll Hyde Theme)
+remote_theme: jekyll/hyde
+
+# C. Exclusions (For Cleaner Builds)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
