@@ -1,7 +1,7 @@
 # Site settings
 title: Valhalla Innovations
 description: Security through simplicity — reduce exposure, isolate what matters.
-baseurl: ""  # Important: empty for custom domain
+baseurl: ""                     # MUST be empty for custom domain
 url: "https://valhallainnovations.net"
 
 # Theme (remote — works on GitHub Pages)
@@ -13,14 +13,15 @@ author:
   email: thor.whittaker@valhallainnovations.com
   github_username: odinsgarden
 
-# Navigation bar links
+# Navigation bar links (only one block needed)
 navbar-links:
   Home: "/"
+  What We Build: "/architecture/"
   Complexity: "/complexity/"
   Vision: "/vision/"
   About: "/about/"
 
-# Social icons in footer (add more if needed)
+# Social icons in footer
 social:
   - title: Email
     url: mailto:thor.whittaker@valhallainnovations.com
@@ -29,18 +30,12 @@ social:
 
 # Other useful settings
 markdown: kramdown
-highlighter: rouge  # code highlighting
-show_excerpts: true  # show previews on home if you add posts later
-timezone: America/New_York  # or your zone
+highlighter: rouge               # code highlighting
+show_excerpts: true              # show previews on home if you add posts later
+timezone: America/New_York       # your zone
 
-# Minimal styling tweaks (optional)
+# Minimal styling tweaks
 minimal: true
 
-navbar-links:
-  Home: "/"
-  What We Build: "/architecture/"
-  Complexity: "/complexity/"
-  Vision: "/vision/"
-  About: "/about/"
-
+# Custom footer text (complete sentence)
 footer-text: "Valhalla Innovations — THORVEIL: Hardware-enforced isolation for zero-trust endpoints"
