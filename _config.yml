@@ -1,19 +1,37 @@
-# 💻 _config.yml - The Divine Command for valhallainnovations.net
-# A. Site Settings (CRITICAL FOR CUSTOM DOMAIN/THEME FIX)
-url: "https://valhallainnovations.net" 
-baseurl: ""  # THIS MUST BE AN EMPTY STRING FOR APEX DOMAIN FIX
+# Site settings
+title: Valhalla Innovations
+description: Security through simplicity — reduce exposure, isolate what matters.
+baseurl: ""  # Important: empty for custom domain
+url: "https://valhallainnovations.net"
 
-title: "Valhalla Innovations - NET Site"
-email: "thor.whittaker@valhallainnovations.com" 
-description: >- # Site description for search engines
-  Secondary digital identity for Valhalla Innovations, focused on 
-  performance and built with zero latency.
+# Theme (remote — works on GitHub Pages)
+remote_theme: daattali/beautiful-jekyll@master
 
-# B. Build Settings (Required for the Jekyll Hyde Theme)
-remote_theme: jekyll/hyde
+# Author / personal info
+author:
+  name: Thor Whittaker
+  email: thor.whittaker@valhallainnovations.com
+  github_username: odinsgarden
 
-# C. Exclusions (For Cleaner Builds)
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - vendor/
+# Navigation bar links
+navbar-links:
+  Home: "/"
+  Complexity: "/complexity/"
+  Vision: "/vision/"
+  About: "/about/"
+
+# Social icons in footer (add more if needed)
+social:
+  - title: Email
+    url: mailto:thor.whittaker@valhallainnovations.com
+  - title: GitHub
+    url: https://github.com/odinsgarden
+
+# Other useful settings
+markdown: kramdown
+highlighter: rouge  # code highlighting
+show_excerpts: true  # show previews on home if you add posts later
+timezone: America/New_York  # or your zone
+
+# Minimal styling tweaks (optional)
+minimal: true
