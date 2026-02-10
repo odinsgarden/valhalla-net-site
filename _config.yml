@@ -35,3 +35,10 @@ timezone: America/New_York  # or your zone
 
 # Minimal styling tweaks (optional)
 minimal: true
+
+navbar-links:
+  Home: "/"
+  What We Build: "/architecture/"
+  Complexity: "/complexity/"
+  Vision: "/vision/"
+  About: "/about/"
