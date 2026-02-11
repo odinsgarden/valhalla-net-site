@@ -3,24 +3,19 @@ layout: home
 title: Welcome to Valhalla Innovations
 ---
 
-# Welcome to the .NET Command Center
-
 # Valhalla Innovations
 
 **Security through physical isolation — not endless patching.**
 
 **Valhalla Ghost Layer**  
-Diode-isolated, RAM-only, PQC-anchored compute environment that eliminates persistent identity and enables secure autonomy in contested environments.
+Diode-isolated, RAM-only, PQC-anchored compute environment that eliminates persistent identity, resists forensic analysis, and enables secure autonomy in contested environments.
 
 [Explore the full architecture →](/architecture/)
 
-This is the secondary landing page for valhallainnovations.net.  
+This is the secondary landing page for valhallainnovations.net — optimized for dedicated content on security, simplicity, and isolation.  
 The architecture mirrors the primary site for performance consistency:
-
-- Layout: default ensures Hyde/Beautiful Jekyll styling applies cleanly.
-- _config.yml optimized for zero-latency asset loading.
-
-This domain is ready for dedicated content on security, simplicity, and isolation.
+- **Layout**: default ensures Hyde/Beautiful Jekyll styling applies cleanly  
+- **_config.yml**: optimized for zero-latency asset loading  
 
 **Core Philosophy**  
 Modern systems aren’t broken — they’re just too big to defend.  
