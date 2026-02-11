@@ -1,42 +1,40 @@
 ---
 layout: page
-title: THORVEIL Architecture
+title: THORVEIL Architecture – Valhalla Ghost Layer
 permalink: /architecture/
 ---
 
-# THORVEIL Architecture Overview
+# Valhalla Ghost Layer
 
-**Core principle**: Make operating-system complexity irrelevant by enforcing physical and cryptographic boundaries that software alone cannot bypass.
+**Diode-isolated, RAM-only, PQC-anchored compute environment**
 
-### High-Level Block Diagram
-[Insert simple diagram here — you can use draw.io / Excalidraw and upload as PNG to /assets/img/]
+A diode-isolated, RAM-only, PQC-anchored compute environment that eliminates persistent identity, resists forensic analysis, and enables secure autonomy in contested environments.
 
-- **Dirty Side** (exposed, complex, internet-facing)  
-  - Standard OS (Windows/Linux) or hardened container  
-  - All normal applications and network access  
-  - Can be fully compromised — assumed hostile
+THORVEIL is the platform that delivers this capability through a physically enforced, quantum-resilient endpoint isolation architecture.
 
-- **One-Way Data Diode** (hardware-enforced)  
-  - Commercial or custom FPGA-based unidirectional gateway  
-  - Data flows out only (telemetry, logs, results)  
-  - No reverse path possible — physics-level block
+### Core Architecture
 
-- **Clean Side** (protected, minimal, isolated)  
-  - RAM-only OS (Alpine toram variant or custom micro-distro)  
-  - Ephemeral execution — no disk, no persistence  
-  - SHA-3 measured boot + PQC signatures (Dilithium)  
-  - Post-quantum key exchange (Kyber) for any outbound tunnels  
-  - Ghost-layer identity overlay (ephemeral IDs, no static MAC/UUID)
+- **Dirty Side** (exposed, assumed hostile)  
+  Standard or hardened host OS, full network access, all normal applications.  
+  Can be fully compromised — no impact to clean side.
 
-- **Outcome**  
-  - Dirty-side malware cannot pivot or exfiltrate from clean side  
-  - No forensic artifacts after shutdown  
-  - Quantum-resistant against harvest-now-decrypt-later  
-  - Minimal attack surface on clean side (verifiable by audit)
+- **Hardware Data Diode** (unidirectional bridge)  
+  Commercial-grade or custom FPGA-based one-way gateway.  
+  Data flows out only (telemetry, logs, results).  
+  No reverse path possible — physics-level enforcement.
 
-### Key Differentiators vs Existing Solutions
-- Not software firewall / sandbox / VDI — physical diode cannot be reconfigured or bypassed  
-- Not just PQC — combines hardware isolation + quantum crypto + zero persistence  
-- Not cloud-dependent — fully air-gapped-capable endpoint
+- **Clean Side** (protected enclave)  
+  RAM-only OS (Alpine toram variant or custom micro-distro).  
+  Ephemeral execution — zero persistence after power loss.  
+  SHA-3 measured boot + post-quantum signatures (Dilithium).  
+  Kyber key exchange for outbound tunnels.  
+  Ghost-layer identity overlay (ephemeral IDs, no static MAC/UUID/hostname).
 
-thor.whittaker@valhallainnovations.com
+**Outcome**  
+Compromise on the dirty side becomes irrelevant.  
+No remote code execution, no forensic artifacts, no quantum decryption risk, no discoverable identity.
+
+Designed for:  
+critical infrastructure • defense field devices • secure administrative terminals • regulated healthcare/research endpoints
+
+[Contact for prototype, pilot, or partnership → mailto:thor.whittaker@valhallainnovations.com]
