@@ -34,7 +34,7 @@ THORVEIL is the platform that delivers this capability through a physically enfo
 Compromise on the dirty side becomes irrelevant.  
 No remote code execution, no forensic artifacts, no quantum decryption risk, no discoverable identity.
 
-Designed for:  
+**Designed for**  
 critical infrastructure • defense field devices • secure administrative terminals • regulated healthcare/research endpoints
 
 [Contact for prototype, pilot, or partnership → mailto:thor.whittaker@valhallainnovations.com]
