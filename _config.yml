@@ -1,32 +1,45 @@
-title: Valhalla Innovations
-description: Security through simplicity — reduce exposure, isolate what matters.
+title: "valhalla-net-site"
+description: "Secondary digital identity for valhallainnovations.net. Maintains a separate code base and content from the primary .com site."
 baseurl: ""
 url: "https://valhallainnovations.net"
 
-remote_theme: daattali/beautiful-jekyll@master
+remote_theme: "daattali/beautiful-jekyll@master"
 
 author:
-  name: Thor Whittaker
-  email: thor.whittaker@valhallainnovations.com
-  github_username: odinsgarden
+  name: "Thor Whittaker"
+  email: "thor.whittaker@valhallainnovations.com"
+  github_username: "odinsgarden"
 
 navbar-links:
   Home: "/"
-  What We Build: "/architecture/"
-  Complexity: "/complexity/"
-  Vision: "/vision/"
+  Identity: "/identity/"
+  Projects: "/projects/"
+  Blog: "/blog/"
   About: "/about/"
 
 social:
-  - title: Email
-    url: mailto:thor.whittaker@valhallainnovations.com
-  - title: GitHub
-    url: https://github.com/odinsgarden
+  - title: "Email"
+    url: "mailto:thor.whittaker@valhallainnovations.com"
+  - title: "GitHub"
+    url: "https://github.com/odinsgarden"
 
 markdown: kramdown
 highlighter: rouge
 show_excerpts: true
-timezone: America/New_York
+timezone: "America/New_York"
 minimal: true
 
-footer-text: "Valhalla Innovations — THORVEIL: Hardware-enforced isolation for zero-trust endpoints"
+# Optional site-level metadata for SEO and sharing
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"
+      seo:
+        title: "valhalla-net-site"
+        description: "Secondary digital identity for Valhalla Innovations"
+        twitter_card: "summary"
+        og_type: "website"
+
+footer-text: "valhalla-net-site — Secondary identity for Valhalla Innovations"
