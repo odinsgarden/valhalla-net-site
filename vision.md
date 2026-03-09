@@ -45,12 +45,22 @@ To me, ‘least exposure’ means stripping a system down to the parts that actu
 ## Real-World Proof: One-Way Isolation in Action
 Hardware data diodes and unidirectional gateways make this philosophy concrete: outbound data flow only, reverse path physically impossible, protected side kept minimal and untouchable.
 
-- **Oakdoor data diode** — threats from the dirty side are averted; one-way flow ensures the clean side stays sealed.  
-- **Stratign data diode** — anode/cathode hardware allows outbound transfer but blocks any return path — no grab possible.  
-- **BlackBear intelligent unidirectional gateway** (FPGA-based) — protocol break + diode enforces isolation between high-risk and protected networks.  
-- **Patton FiberPlex data diode** — send-only to receive-only circuit; cyber threats mitigated at the boundary, minimal exposure on the corporate side.  
-- **Advenica data diode illustration** — industrial site pushes data one-way to the cloud; dashed line enforces no return, keeping the untouchable truly isolated.
+## Real-World Proof: One-Way Isolation in Action
 
+Hardware data diodes and unidirectional gateways make this philosophy concrete: outbound data flow only, reverse path physically impossible, protected side kept minimal and untouchable.
+
+Examples of deployed one-way isolation technologies include:
+
+- Optical or FPGA-based data diodes that enforce unidirectional flow, averting threats from the dirty side and keeping the clean side sealed.  
+- Anode/cathode or protocol-break designs that allow outbound transfer but block all return paths — eliminating any "grab" opportunity.  
+- Intelligent gateways that combine diode enforcement with protocol sanitization, isolating high-risk and protected networks.  
+- Send-only to receive-only circuits that mitigate cyber threats at the boundary with minimal exposure on the protected side.  
+- Industrial-to-cloud one-way bridges that use dashed-line enforcement to prevent return paths, keeping critical assets truly isolated.
+
+These systems are widely used in critical infrastructure, defense, and high-security environments — demonstrating exactly what "reduce + isolate" looks like in practice: the dirty side can be compromised, but it never touches what matters.
+
+![One-Way Data Diode Flow Example](/assets/img/data-diode-example.png)
+![Unidirectional Gateway Isolation Diagram](/assets/img/unidirectional-gateway.png)
 These are deployed technologies showing exactly what "reduce + isolate" looks like: the dirty side can be compromised, but it never touches what matters.
 
 thor.whittaker@valhallainnovations.com  
