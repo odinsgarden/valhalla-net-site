@@ -32,3 +32,5 @@ timezone: America/New_York
 minimal: true
 
 footer-text: "Valhalla Innovations — THORVEIL: Hardware-enforced isolation for zero-trust endpoints"
+
+footer-links-active: false
