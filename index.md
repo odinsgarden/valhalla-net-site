@@ -1,12 +1,23 @@
 ---
-layout: home
-title: Test - Valhalla Innovations
+layout: page
+title: About Valhalla Innovations
+permalink: /about/
 ---
 
-# SITE IS LIVE - TEST PAGE
+# About Valhalla Innovations
 
-If you see this text, GitHub Pages is building correctly.
+**Thor Whittaker**  
+Founder & Ghost-Layer Architect  
 
-Valhalla Ghost Layer is coming soon.
+DoD Contractor (CAGE: 188U9, UEI: ZQSVTGA3E563)  
 
-thor.whittaker@valhallainnovations.com
+Exploring hardware-enforced isolation, reduced attack surfaces, quantum-resilient computing, and why simplicity beats complexity in security.  
+
+Building **THORVEIL** — diode-isolated, RAM-only, PQC-anchored endpoints for contested environments.
+
+**Contact**  
+sales@valhallainnovations.net  
+GitHub: [odinsgarden](https://github.com/odinsgarden)  
+LinkedIn: [Thor Ustin Whittaker](https://www.linkedin.com/in/thor-ustin-whittaker-b96788252)
+
+[Back to Home →](/)
