@@ -9,7 +9,8 @@ permalink: /complexity/
 Modern systems aren’t broken — they’re just too big to defend.  
 I went deep into the files and realized something simple: **you can’t protect what you can’t understand.**
 
-The deeper I looked, the more I found:  
+The deeper I looked, the more I found:
+
 - Thousands of files I never created  
 - Processes I never started  
 - Layers I never knew existed  
