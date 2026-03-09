@@ -10,7 +10,7 @@ author:
   email: thor.whittaker@valhallainnovations.com
   github_username: odinsgarden
 
-# Navigation bar links (only ONE block)
+# Navigation bar links (only ONE block, no duplicates)
 navbar-links:
   Home: "/"
   What We Build: "/architecture/"
