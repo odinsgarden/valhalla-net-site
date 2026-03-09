@@ -61,5 +61,5 @@ Primary use cases:
 
 [Contact for prototypes, pilots, or partnerships → /contact/]
 
-thor.whittaker@valhallainnovations.com  
+sales@valhallainnovations.com  
 [Back to Home →](/)
