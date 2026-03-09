@@ -56,10 +56,20 @@ Examples of deployed one-way isolation technologies include:
 
 These systems are widely used in critical infrastructure, defense, and high-security environments — demonstrating exactly what "reduce + isolate" looks like in practice: the dirty side can be compromised, but it never touches what matters.
 
-![One-Way Data Diode Flow Example](/assets/img/data-diode-example.png)
-![Unidirectional Gateway Isolation Diagram](/assets/img/unidirectional-gateway.png)
-![Data Diode Threat Mitigation](/assets/img/data-diode-threat.png)
-![Drone RAM Payload Integration](/assets/img/drone_1.jpg)
+![Cyber Threat & Diode Mitigation](/assets/img/cyberp.png)  
+**Caption**: Cyber threats averted by hardware one-way isolation.
+
+![One-Way Data Diode Flow Example](/assets/img/data-diode-example.png)  
+**Caption**: Basic unidirectional data flow diagram.
+
+![Unidirectional Gateway Isolation Diagram](/assets/img/unidirectional-gateway.png)  
+**Caption**: Gateway enforcing protocol break and isolation.
+
+![Data Diode Threat Mitigation](/assets/img/data-diode-threat.png)  
+**Caption**: Threat blocked at the boundary with one-way enforcement.
+
+![Drone RAM Payload Integration](/assets/img/drone_1.jpg)  
+**Caption**: Dual-purpose RAM module on tactical UAV — ephemeral execution with <10ms purge.
 
 sales@valhallainnovations.com  
 
