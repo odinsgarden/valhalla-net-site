@@ -10,7 +10,8 @@ permalink: /vision/
 Modern systems aren’t broken — they’re just too big to defend.  
 I went deep into the files and realized something simple: **you can’t protect what you can’t understand.**
 
-The deeper I looked, the more I found:  
+The deeper I looked, the more I found:
+
 - Thousands of files I never created  
 - Processes I never started  
 - Layers I never knew existed  
@@ -45,10 +46,6 @@ To me, ‘least exposure’ means stripping a system down to the parts that actu
 ## Real-World Proof: One-Way Isolation in Action
 Hardware data diodes and unidirectional gateways make this philosophy concrete: outbound data flow only, reverse path physically impossible, protected side kept minimal and untouchable.
 
-## Real-World Proof: One-Way Isolation in Action
-
-Hardware data diodes and unidirectional gateways make this philosophy concrete: outbound data flow only, reverse path physically impossible, protected side kept minimal and untouchable.
-
 Examples of deployed one-way isolation technologies include:
 
 - Optical or FPGA-based data diodes that enforce unidirectional flow, averting threats from the dirty side and keeping the clean side sealed.  
@@ -61,7 +58,8 @@ These systems are widely used in critical infrastructure, defense, and high-secu
 
 ![One-Way Data Diode Flow Example](/assets/img/data-diode-example.png)
 ![Unidirectional Gateway Isolation Diagram](/assets/img/unidirectional-gateway.png)
-These are deployed technologies showing exactly what "reduce + isolate" looks like: the dirty side can be compromised, but it never touches what matters.
+![Data Diode Threat Mitigation](/assets/img/data-diode-threat.png)
+![Drone RAM Payload Integration](/assets/img/drone_1.jpg)
 
 sales@valhallainnovations.com  
 
