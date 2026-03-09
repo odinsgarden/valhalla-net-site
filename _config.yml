@@ -10,12 +10,14 @@ author:
   email: thor.whittaker@valhallainnovations.com
   github_username: odinsgarden
 
+# Navigation bar links (only ONE block)
 navbar-links:
   Home: "/"
   What We Build: "/architecture/"
   Complexity: "/complexity/"
   Vision: "/vision/"
   About: "/about/"
+  Contact: "/contact/"
 
 social:
   - title: Email
