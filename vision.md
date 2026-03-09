@@ -63,6 +63,6 @@ These systems are widely used in critical infrastructure, defense, and high-secu
 ![Unidirectional Gateway Isolation Diagram](/assets/img/unidirectional-gateway.png)
 These are deployed technologies showing exactly what "reduce + isolate" looks like: the dirty side can be compromised, but it never touches what matters.
 
-thor.whittaker@valhallainnovations.com  
+sales@valhallainnovations.com  
 
 [Back to Home →](/)
