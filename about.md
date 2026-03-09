@@ -22,7 +22,7 @@ We focus on hardware-enforced isolation, reduced attack surfaces, post-quantum c
 Thor Whittaker  
 Founder & Ghost-Layer Architect  
 
-thor.whittaker@valhallainnovations.com  
+sales@valhallainnovations.com  
 GitHub: [odinsgarden](https://github.com/odinsgarden)  
 LinkedIn: [Thor Ustin Whittaker](https://www.linkedin.com/in/thor-ustin-whittaker-b96788252)
 
