@@ -1,7 +1,27 @@
-<div style="border: 2px solid #00FF41; background: rgba(0, 255, 65, 0.05); padding: 30px; margin: 40px 0; font-family: 'JetBrains Mono', monospace;">
-    <h2 style="color: #00FF41; margin-top: 0;">2026 MUNICIPAL PILOT PROGRAM</h2>
-    <p style="color: #fff;">Valhalla Innovations is seeking three (3) local government partners for the <strong>Valhalla Bridge Alpha Deployment</strong>.</p>
-    
+---
+layout: page
+title: Municipal Pilot Program
+permalink: /pilot/
+---
+
+<div class="tactical-card">
+  <div class="status-active"><div class="status-dot"></div> ENROLLMENT: OPEN</div>
+  # 2026 MUNICIPAL PILOT PROGRAM
+  ### HARDWARE-ENFORCED GRID PROTECTION
+</div>
+
+Valhalla's 13th Innovations Unit is seeking three (3) local government partners for the **ThorVeil Bridge** hardware deployment. 
+
+**PHASE 1 MISSION EFFECTS:**
+* **Physical Layer Isolation:** Unidirectional data flow for sensitive utility telemetry.
+* **Zero-Persistence Compute:** Elimination of on-disk attack surfaces.
+* **Sovereign Navigation:** Fully offline internal reference logic.
+
+<div style="text-align: center; margin-top: 40px;">
+  <a href="mailto:sales@valhallainnovations.com?subject=Pilot Program Inquiry" class="btn-dispatch">
+    INITIATE PILOT DISPATCH
+  </a>
+</div>
     <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
         <div style="border-right: 1px solid #333; padding-right: 20px;">
             <h4 style="color: #00FF41;">WHAT WE PROVIDE</h4>
