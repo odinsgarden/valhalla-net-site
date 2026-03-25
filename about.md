@@ -4,26 +4,39 @@ title: About Valhalla Innovations
 permalink: /about/
 ---
 
-# Valhalla Innovations
+<div class="tactical-card">
+  <div class="status-active"><div class="status-dot"></div> ENTITY: VERIFIED</div>
+  
+  # VALHALLA INNOVATIONS
+  ### [ NON-TRADITIONAL DEFENSE CONTRACTOR ]
 
-**Corporate Identity & Certifications**
+  Valhalla Innovations specializes in rapid prototyping and high-assurance hardware security. We focus on eliminating attack surfaces through **Hardware-Enforced Isolation** and **Quantum-Resilient Architectures**.
+</div>
 
-Valhalla Innovations is a registered non-traditional defense contractor specializing in rapid prototyping and high-assurance hardware security.
+### CAPABILITIES & IDENTIFIERS
 
-| Identifier          | Value                  |
-|---------------------|------------------------|
-| **CAGE Code**       | 188U9                  |
-| **UEI**             | ZQSVTGA3E563           |
-| **Location**        | Jacksonville, FL       |
-| **Primary NAICS**   | 541512 (Computer Systems Design)<br>541330 (Engineering Services) |
+| IDENTIFIER | REGISTRY VALUE |
+| :--- | :--- |
+| **CAGE CODE** | **188U9** |
+| **UEI** | **ZQSVTGA3E563** |
+| **GS1 GTIN** | **1 99874 35288 6** |
+| **NAICS** | 541512 / 541330 |
+| **LOCATION** | JACKSONVILLE, FL |
 
-We focus on hardware-enforced isolation, reduced attack surfaces, post-quantum cryptography, and quantum-resilient architectures — including the **THORVEIL** platform and **Valhalla Ghost Layer** capability.
+---
 
-Thor Whittaker  
-Founder & Ghost-Layer Architect  
+### THE THORVEIL ARCHITECTURE
+Our core capability, the **Valhalla Ghost Layer**, utilizes unidirectional data diode technology to break the Cyber Kill Chain.
 
-sales@valhallainnovations.com  
-GitHub: [odinsgarden](https://github.com/odinsgarden)  
-LinkedIn: [Thor Ustin Whittaker](https://www.linkedin.com/in/thor-ustin-whittaker-b96788252)
 
-[Back to Home →](/)
+
+> **TECHNICAL NOTE:** By enforcing a physical-layer one-way data flow, we neutralize the "Exfiltration" and "Command & Control" phases of modern adversary operations. Software cannot override the physics of the diode.
+
+---
+
+### PRINCIPAL ARCHITECT
+**THOR WHITTAKER** *Founder & Ghost-Layer Architect* [ SECURE DISPATCH: sales@valhallainnovations.com ]  
+[ GITHUB: odinsgarden ]  
+[ LINKEDIN: Thor Ustin Whittaker ]
+
+<a href="/" class="btn-pilot">RETURN TO COMMAND HUB</a>
