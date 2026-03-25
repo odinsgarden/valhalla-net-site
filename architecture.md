@@ -1,49 +1,46 @@
 ---
 layout: page
-title: THORVEIL Architecture – Valhalla Ghost Layer
+title: THORVEIL Architecture
 permalink: /architecture/
-description: Hardware-enforced protocol isolation and stateless compute for critical infrastructure.
-seo:
-  title: THORVEIL Architecture — Valhalla Innovations
-  description: Hardware-enforced data diode and stateless execution environments for high-assurance endpoints.
 ---
 
-# THORVEIL Architecture
+<div class="tactical-card">
+  <div class="status-active"><div class="status-dot"></div> PROTOCOL: SECURE-ENCLAVE</div>
+  # THORVEIL ARCHITECTURE
+  ### [ HARDWARE-LOCKED DATA INTEGRITY ]
 
-**Sovereign Hardware Isolation // Deterministic Security**
+  THORVEIL replaces software-defined "trust" with **Hardware-Enforced Certainty**. By utilizing a physical protocol break, the system ensures secure data transit in environments where standard firewalls are compromised.
+</div>
 
-The THORVEIL platform replaces software-defined "trust" with hardware-enforced "certainty." By utilizing a physical protocol break, the system enables secure data transit and execution in contested environments where standard firewalls are insufficient.
+### THE TRIPLE-GATE SYSTEM
+
+<div class="blueprint-grid">
+  <div class="tactical-card" style="margin:0;">
+    <h4 style="color: var(--neon-green);">I. INGRESS ISOLATION</h4>
+    <p style="font-size: 0.8rem; color: #888;">Standard network interfaces are logically and electrically partitioned from the core environment.</p>
+  </div>
+
+  <div class="tactical-card" style="margin:0;">
+    <h4 style="color: var(--neon-green);">II. PHOTONIC DIODE</h4>
+    <p style="font-size: 0.8rem; color: #888;">Unidirectional hardware bridge. Rendering remote Command-and-Control (C2) callbacks physically impossible.</p>
+  </div>
+</div>
 
 <div class="tactical-card">
-  <h2>The Three-Tier Architecture</h2>
-  
-  <p><strong>1. External Node (Ingress/Untrusted)</strong><br>
-  A hardened interface node that manages standard network connectivity. Designed to be sacrificial; even in a total compromise scenario, no logical or electrical path exists to the internal enclave.</p>
-
-  <p><strong>2. The Photonic Moat (Physical Diode)</strong><br>
-  A custom-engineered hardware bridge that converts data to light for unidirectional transmission. This physical gap ensures a zero-return path, rendering remote Command-and-Control (C2) callbacks mathematically impossible.</p>
-
-  <p><strong>3. Secure Enclave (Egress/Protected)</strong><br>
-  A stateless, RAM-only execution environment. By operating entirely in volatile memory, the system ensures absolute forensic neutrality and eliminates the possibility of persistent malware.</p>
+  <h4 style="color: var(--neon-green);">III. STATELESS EXECUTION</h4>
+  <p style="font-size: 0.8rem; color: #888;">Volatile-only compute environments ensure absolute forensic neutrality. No persistent data survives a power-cycle event.</p>
 </div>
 
-### **Operational Security & Guarantees**
+---
 
-By shifting from logical barriers to physical ones, the Valhalla Ghost Layer provides a predictable security posture for critical infrastructure:
+### MISSION ASSURANCE
+* **EXFILTRATION BLOCK:** Physical-layer prevention of unauthorized data egress.
+* **ZERO-PERSISTENCE:** Automated environment zeroization upon mission completion.
+* **SIGNATURE MASKING:** Obfuscated network presence to prevent reconnaissance.
 
-* **Zero-Persistence Architecture:** No local storage write-paths exist within the enclave. All data is zeroized upon power loss.
-* **Integrity Verification:** Every boot cycle is validated through multi-stage measured boot sequences anchored in hardware.
-* **Post-Quantum Resilience:** Internal logic and communications utilize NIST-standard cryptographic primitives designed to withstand next-generation decryption threats.
-* **Identity Masking:** Devices utilize ephemeral identifiers and ghost-layer overlays to prevent discovery via traditional network reconnaissance.
-
-### **Compliance & Procurement**
-**CAGE Code:** 188U9  
-**Primary NAICS:** 541512, 541330  
-
-For detailed technical specifications, SCADA integration documentation, or to request a **Security Auditor's Whitepaper**, please contact our engineering team.
-
-<div style="margin-top: 30px;">
-  <a href="mailto:sales@valhallainnovations.com" class="btn-pilot">REQUEST TECHNICAL WHITEPAPER</a>
+<div style="text-align: center; margin-top: 50px;">
+  <p style="font-size: 0.6rem; color: #444; letter-spacing: 2px;">TECHNICAL SCHEMATICS RESTRICTED TO CAGE: 188U9 HOLDERS</p>
+  <a href="mailto:sales@valhallainnovations.com?subject=Requesting%20Classified%20Briefing" class="btn-dispatch">
+    REQUEST CLASSIFIED BRIEFING
+  </a>
 </div>
-
-[Back to Home →](/)
