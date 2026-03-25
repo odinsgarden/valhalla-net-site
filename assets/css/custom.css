@@ -1,42 +1,44 @@
-
-/* VALHALLA INNOVATIONS: TOP-TIER OVERRIDE */
+/* VALHALLA INNOVATIONS: TOP-TIER OVERRIDE v2.1 */
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
   --v-green: #00FF41;
   --v-black: #050505;
-  --v-glass: rgba(18, 18, 18, 0.8);
+  --v-glass: rgba(18, 18, 18, 0.85);
+  --v-border: rgba(0, 255, 65, 0.2);
 }
 
 body {
   background-color: var(--v-black) !important;
   color: #fff !important;
   font-family: 'JetBrains Mono', monospace !important;
+  -webkit-font-smoothing: antialiased;
 }
 
-/* The "Pop" - Tactical Glass Cards */
+/* 1. Tactical Glass Cards */
 .tactical-card {
   background: var(--v-glass);
-  border: 1px solid rgba(0, 255, 65, 0.2);
-  backdrop-filter: blur(10px);
+  border: 1px solid var(--v-border);
+  backdrop-filter: blur(12px);
   padding: 2.5rem;
   margin: 30px 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-  transition: 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tactical-card:hover {
   border-color: var(--v-green);
-  box-shadow: 0 0 20px rgba(0, 255, 65, 0.2);
+  box-shadow: 0 0 25px rgba(0, 255, 65, 0.15);
 }
 
 h1, h2, h3 {
   color: var(--v-green) !important;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
 }
 
-/* Tactical Button */
+/* 2. Tactical Button */
 .btn-pilot {
   background: var(--v-green);
   color: #000 !important;
@@ -45,5 +47,42 @@ h1, h2, h3 {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
-  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%); /* Angled military look */
+  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
+  transition: 0.2s ease-in-out;
+}
+
+.btn-pilot:hover {
+  transform: scale(1.02);
+  filter: brightness(1.1);
+  box-shadow: 0 0 15px var(--v-green);
+}
+
+/* 3. Tactical Footer Email Styling */
+.site-footer a {
+  color: var(--v-green) !important;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.site-footer a:hover {
+  text-shadow: 0 0 8px var(--v-green);
+}
+
+/* --- THE "POLISH" (FINAL TOP-TIER TOUCHES) --- */
+
+/* Custom Tactical Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--v-black); }
+::-webkit-scrollbar-thumb { background: #222; border-radius: 0; }
+::-webkit-scrollbar-thumb:hover { background: var(--v-green); }
+
+/* Text Selection Glow */
+::selection { background: var(--v-green); color: #000; }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .tactical-card { padding: 1.5rem; }
+  h1 { font-size: 1.8rem; }
 }
