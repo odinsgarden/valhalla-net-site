@@ -1,53 +1,69 @@
-/* VALHALLA'S 13TH: AGGRESSIVE OVERRIDE V5.0 */
+/* VALHALLA'S 13TH: PURE NEON OVERRIDE V6.0 - NO BLUE / NO FOG */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap');
 
 :root {
-  --v-green: #00FF41 !important;
+  --neon-green: #00FF41 !important;
   --v-black: #020202 !important;
 }
 
-/* FORCE BACKGROUND BLACK */
-html, body, .main-content, .wrapper, .site-header, .site-footer {
+/* 1. THE GRID SYSTEM: Sharp lines, no blur */
+html, body, .main-content, .wrapper, .site-header, .site-footer, main, article, section {
   background-color: var(--v-black) !important;
   background-image: 
-    linear-gradient(rgba(0, 255, 65, 0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 255, 65, 0.05) 1px, transparent 1px) !important;
-  background-size: 50px 50px !important;
+    linear-gradient(rgba(0, 255, 65, 0.08) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, rgba(0, 255, 65, 0.08) 1.5px, transparent 1.5px) !important;
+  background-size: 45px 45px !important;
   color: #FFFFFF !important;
   font-family: 'JetBrains Mono', monospace !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* FORCE TEXT GREEN & GLOWING */
-h1, h2, h3, .site-title, .site-link {
+/* 2. TEXT & HEADERS: High-Res Neon */
+h1, h2, h3, .site-title, .post-title, .page-heading {
   font-family: 'Orbitron', sans-serif !important;
-  color: var(--v-green) !important;
+  color: var(--neon-green) !important;
   text-transform: uppercase !important;
-  letter-spacing: 5px !important;
-  text-shadow: 0 0 15px rgba(0, 255, 65, 0.4) !important;
+  letter-spacing: 6px !important;
+  text-shadow: 0 0 12px rgba(0, 255, 65, 0.5) !important;
 }
 
-/* KILL THE WHITE BOXES */
-.tactical-card, article, section, div {
-  background: transparent !important;
-  border-color: rgba(0, 255, 65, 0.2) !important;
-  color: #fff !important;
+/* 3. THE CARDS: No White Backgrounds */
+.tactical-card, .blueprint-grid div {
+  background: rgba(0, 0, 0, 0.9) !important; /* Slight opacity for depth */
+  border: 1px solid rgba(0, 255, 65, 0.3) !important;
+  border-left: 4px solid var(--neon-green) !important;
+  padding: 30px !important;
+  margin-bottom: 20px !important;
 }
 
-/* THE BUTTON (NEON GREEN) */
-.btn-dispatch, .btn-pilot, .btn {
-  background-color: var(--v-green) !important;
+/* 4. THE ACTION BUTTON: Angled Neon Green */
+.btn-dispatch, .btn-pilot, .btn, button {
+  background-color: var(--neon-green) !important;
   color: #000 !important;
   font-family: 'Orbitron' !important;
   font-weight: 900 !important;
-  padding: 15px 40px !important;
+  padding: 16px 42px !important;
   text-decoration: none !important;
   display: inline-block !important;
-  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%) !important;
+  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%) !important;
   border: none !important;
+  cursor: pointer !important;
+  transition: 0.2s ease-in-out !important;
 }
 
-/* KILL THE THEME FOOTER */
-footer, .footer-col-wrapper {
-  border-top: 1px solid var(--v-green) !important;
-  background-color: #000 !important;
+.btn-dispatch:hover {
+  filter: brightness(1.2) !important;
+  box-shadow: 0 0 20px var(--neon-green) !important;
+}
+
+/* 5. CLEANUP: Kill theme artifacts */
+footer, .footer-col-wrapper, .site-footer {
+  border-top: 1px solid var(--neon-green) !important;
+  padding: 50px 0 !important;
+}
+
+a {
+  color: var(--neon-green) !important;
+  text-decoration: none !important;
 }
