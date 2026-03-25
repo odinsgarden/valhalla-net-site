@@ -94,3 +94,23 @@ h1, h2, h3 {
   .tactical-card { padding: 1.5rem; }
   h1 { font-size: 1.8rem; }
 }
+
+<footer style="border-top: 1px solid var(--v-border); padding: 50px 0; margin-top: 80px; background: #000;">
+    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+        
+        <div style="text-align: left;">
+            <p style="font-family: 'Orbitron'; color: var(--v-blue); margin: 0; font-size: 0.8rem; letter-spacing: 2px;">
+                VALHALLA'S 13TH INNOVATIONS UNIT
+            </p>
+            <p style="font-family: 'JetBrains Mono'; font-size: 0.55rem; color: #444; margin-top: 8px;">
+                LEGAL ENTITY: VALHALLA'S THIRTEEN LLC <br>
+                CAGE: 188U9 // UEI: ZQSVTGA3E563 <br>
+                GS1 AUTHENTICATED // JAX DEFENSE HUB
+            </p>
+        </div>
+
+        <div style="text-align: right;">
+            <div class="status-active" style="font-size: 10px;">MISSION READY</div>
+        </div>
+    </div>
+</footer>
