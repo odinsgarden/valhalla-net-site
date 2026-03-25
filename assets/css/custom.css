@@ -1,116 +1,77 @@
-/* VALHALLA.NET: HIGH-RESOLUTION TACTICAL OVERRIDE */
+/* VALHALLA'S 13TH INNOVATIONS UNIT - TACTICAL OVERRIDE */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap');
+
 :root {
-  --v-blue: #00d4ff; /* The Electric Blue you like */
-  --v-void: #020202;
-  --v-panel: rgba(10, 10, 10, 0.9);
-  --v-border: rgba(0, 212, 255, 0.3);
+  --neon-green: #00FF41;   /* The "Matrix/Tactical" Green */
+  --obsidian: #050505;     /* Deep Black */
+  --border-glow: rgba(0, 255, 65, 0.2);
 }
 
 body {
-  background-color: var(--v-void) !important;
+  background-color: var(--obsidian) !important;
+  color: #FFFFFF !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  margin: 0;
+  /* Adds the high-res "Scanline" grid texture */
   background-image: 
-    radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
-    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
-  background-size: 100% 100%, 40px 40px, 40px 40px;
-  color: #ffffff !important;
-  -webkit-font-smoothing: antialiased;
+    linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+  background-size: 30px 30px;
 }
 
-/* Sharp, High-Res Cards */
-.tactical-card, .blueprint-module {
-  background: var(--v-panel) !important;
-  border: 1px solid var(--v-border) !important;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
-  backdrop-filter: none; /* Removing blur stops the 'foggy' look */
-  border-radius: 0;
+/* 1. Header & Title Sharpness */
+h1, h2, h3, .site-title {
+  font-family: 'Orbitron', sans-serif !important;
+  color: var(--neon-green) !important;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-shadow: 0 0 10px rgba(0, 255, 65, 0.5);
+}
+
+/* 2. Tactical Cards (The "Anti-Fog" Fix) */
+.tactical-card, .post-content, .home {
+  background: rgba(10, 10, 10, 0.9) !important;
+  border: 1px solid var(--border-glow) !important;
   padding: 40px;
+  margin-top: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
   position: relative;
 }
 
-/* Accent Corner Brackets for that Professional look */
+/* Accent Corner Brackets */
 .tactical-card::before {
   content: "";
   position: absolute;
   top: -1px; left: -1px;
-  width: 20px; height: 20px;
-  border-top: 2px solid var(--v-blue);
-  border-left: 2px solid var(--v-blue);
+  width: 15px; height: 15px;
+  border-top: 2px solid var(--neon-green);
+  border-left: 2px solid var(--neon-green);
 }
 
-h1, h2, h3 {
-  font-family: 'Orbitron', sans-serif !important;
-  color: var(--v-blue) !important;
-  letter-spacing: 4px;
-  text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
-}
+/* 3. Link & Button Hardening */
+a {
+  color: var(--neon-green) !important;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-/* 2. Tactical Button */
+a:hover {
+  text-shadow: 0 0 10px var(--neon-green);
+  color: #fff !important;
+}
+
 .btn-pilot {
-  background: var(--v-green);
+  background: var(--neon-green);
   color: #000 !important;
-  font-weight: bold;
-  padding: 15px 35px;
-  text-decoration: none;
+  font-weight: 900;
+  padding: 12px 30px;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
   display: inline-block;
-  text-transform: uppercase;
-  clip-path: polygon(5% 0, 100% 0, 95% 100%, 0% 100%);
-  transition: 0.2s ease-in-out;
 }
 
-.btn-pilot:hover {
-  transform: scale(1.02);
-  filter: brightness(1.1);
-  box-shadow: 0 0 15px var(--v-green);
+/* 4. Kill the "Beautiful Jekyll" Branding */
+.site-footer, .footer-col-wrapper {
+  background: var(--obsidian) !important;
+  border-top: 1px solid var(--border-glow) !important;
+  color: #444 !important;
 }
-
-/* 3. Tactical Footer Email Styling */
-.site-footer a {
-  color: var(--v-green) !important;
-  text-decoration: none;
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85rem;
-  letter-spacing: 1px;
-}
-
-.site-footer a:hover {
-  text-shadow: 0 0 8px var(--v-green);
-}
-
-/* --- THE "POLISH" (FINAL TOP-TIER TOUCHES) --- */
-
-/* Custom Tactical Scrollbar */
-::-webkit-scrollbar { width: 8px; }
-::-webkit-scrollbar-track { background: var(--v-black); }
-::-webkit-scrollbar-thumb { background: #222; border-radius: 0; }
-::-webkit-scrollbar-thumb:hover { background: var(--v-green); }
-
-/* Text Selection Glow */
-::selection { background: var(--v-green); color: #000; }
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .tactical-card { padding: 1.5rem; }
-  h1 { font-size: 1.8rem; }
-}
-
-<footer style="border-top: 1px solid var(--v-border); padding: 50px 0; margin-top: 80px; background: #000;">
-    <div style="max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-        
-        <div style="text-align: left;">
-            <p style="font-family: 'Orbitron'; color: var(--v-blue); margin: 0; font-size: 0.8rem; letter-spacing: 2px;">
-                VALHALLA'S 13TH INNOVATIONS UNIT
-            </p>
-            <p style="font-family: 'JetBrains Mono'; font-size: 0.55rem; color: #444; margin-top: 8px;">
-                LEGAL ENTITY: VALHALLA'S THIRTEEN LLC <br>
-                CAGE: 188U9 // UEI: ZQSVTGA3E563 <br>
-                GS1 AUTHENTICATED // JAX DEFENSE HUB
-            </p>
-        </div>
-
-        <div style="text-align: right;">
-            <div class="status-active" style="font-size: 10px;">MISSION READY</div>
-        </div>
-    </div>
-</footer>
