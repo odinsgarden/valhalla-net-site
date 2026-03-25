@@ -1,36 +1,49 @@
+# --- VALHALLA INNOVATIONS: CORE CONFIGURATION ---
 title: Valhalla Innovations
 description: Security through simplicity — reduce exposure, isolate what matters.
 baseurl: ""
 url: "https://valhallainnovations.net"
 
+# --- THEME ENGINE ---
 remote_theme: daattali/beautiful-jekyll@master
 
+# --- CORPORATE IDENTITY (SCRUBBED) ---
 author:
-  name: Thor Whittaker
-  email: thor.whittaker@valhallainnovations.com
-  github_username: odinsgarden
+  name: "Valhalla Innovations"
+  email: "sales@valhallainnovations.com"
+  github_username: "odinsgarden"
 
-# Navigation bar links (only ONE block, no duplicates)
+# --- NAVIGATION HUD ---
 navbar-links:
   Home: "/"
-  What We Build: "/architecture/"
+  Architecture: "/architecture/"
+  The Pilot Program: "/pilot/"
   Complexity: "/complexity/"
   Vision: "/vision/"
   About: "/about/"
   Contact: "/contact/"
 
+# --- SOCIAL & OUTREACH ---
 social:
   - title: Email
-    url: mailto:thor.whittaker@valhallainnovations.com
+    url: "mailto:sales@valhallainnovations.com"
   - title: GitHub
-    url: https://github.com/odinsgarden
+    url: "https://github.com/odinsgarden"
+  - title: LinkedIn
+    url: "https://www.linkedin.com/in/thor-ustin-whittaker-b96788252"
 
+# --- VISUAL ENGINE (THE POP) ---
+# This links your high-resolution custom tactical styles
+css: ["/assets/css/custom.css"]
+
+# --- TECHNICAL SETTINGS ---
 markdown: kramdown
 highlighter: rouge
 show_excerpts: true
 timezone: America/New_York
 minimal: true
 
-footer-text: "Valhalla Innovations — THORVEIL: Hardware-enforced isolation for zero-trust endpoints"
-
+# --- MISSION FOOTER ---
+# Professional, clinical, and includes CAGE for procurement
+footer-text: "Valhalla Innovations (CAGE: 188U9) — THORVEIL: Hardware-enforced isolation for high-assurance endpoints."
 footer-links-active: false
