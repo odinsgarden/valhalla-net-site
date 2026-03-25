@@ -3,25 +3,24 @@ layout: page
 title: About Valhalla Innovations
 permalink: /about/
 ---
-
 <div class="tactical-card">
-  <div class="status-active"><div class="status-dot"></div> ENTITY: VERIFIED</div>
+  <div class="status-active"><div class="status-dot"></div> UNIT STATUS: OPERATIONAL</div>
   
-  # VALHALLA INNOVATIONS
-  ### [ NON-TRADITIONAL DEFENSE CONTRACTOR ]
+  # VALHALLA'S 13TH INNOVATIONS UNIT
+  ### [ ADVANCED DEFENSE RESEARCH & DEVELOPMENT ]
 
-  Valhalla Innovations specializes in rapid prototyping and high-assurance hardware security. We focus on eliminating attack surfaces through **Hardware-Enforced Isolation** and **Quantum-Resilient Architectures**.
+  A specialized division of **Valhalla's Thirteen LLC**, focused on rapid-reaction hardware security, unidirectional telemetry, and ThorVeil infrastructure protection.
 </div>
 
-### CAPABILITIES & IDENTIFIERS
+### CORPORATE REGISTRY: JAX-ENCLAVE-01
 
-| IDENTIFIER | REGISTRY VALUE |
-| :--- | :--- |
+| ENTITY DATA        | CLASSIFICATION VALUE             |
+| :----------------- | :------------------------------- |
+| **LEGAL ENTITY** | **VALHALLA'S THIRTEEN LLC** |
+| **TACTICAL UNIT** | **VALHALLA'S 13TH INNOVATIONS** |
 | **CAGE CODE** | **188U9** |
 | **UEI** | **ZQSVTGA3E563** |
-| **GS1 GTIN** | **1 99874 35288 6** |
-| **NAICS** | 541512 / 541330 |
-| **LOCATION** | JACKSONVILLE, FL |
+| **PRIMARY HUB** | **JACKSONVILLE, FL** |
 
 ---
 
