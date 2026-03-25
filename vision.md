@@ -1,76 +1,49 @@
 ---
 layout: page
-title: Simplicity as Defense
-permalink: /vision/
+title: Our Philosophy
+permalink: /philosophy/
 ---
 
-# Simplicity as Defense
+<div class="tactical-card hero-node">
+  <div class="status-active"><div class="status-dot"></div> MISSION PARAMETER: 90% THREAT ELIMINATION</div>
+  # THE 90% DOCTRINE
+  ### [ HARDWARE-ENFORCED SURVIVABILITY ]
 
-## Complexity Is the Enemy
-Modern systems aren’t broken — they’re just too big to defend.  
-I went deep into the files and realized something simple: **you can’t protect what you can’t understand.**
+  We provide the architectural support necessary to neutralize **90% of modern cyber threats** before they reach your logic stack. Our approach moves defense away from reactive patching and into **Systemic Exclusion**.
+</div>
 
-The deeper I looked, the more I found:
+### COLLAPSING THE ATTACK SURFACE
 
-- Thousands of files I never created  
-- Processes I never started  
-- Layers I never knew existed  
+The primary vulnerability in modern infrastructure is the **Reciprocal Data Path**. Most systems are designed to "listen" as much as they "speak," creating a permanent open door for adversaries.
 
-That’s when it hit me: **the attack surface isn’t a list of vulnerabilities — it’s the entire system.**
 
-So instead of trying to secure every corner of a system I couldn’t map, I started thinking about how to shrink the surface itself.
 
-That shift changed everything: security stopped being about chasing threats and became about controlling exposure.
+<div class="blueprint-grid">
+  <div class="tactical-card" style="margin:0;">
+    <h4 style="color: var(--neon-green);">THE EXPOSURE PROBLEM</h4>
+    <p style="font-size: 0.8rem; color: #888;">Software-only security relies on "Detect and Respond." This creates a delay that sophisticated threats exploit to gain persistence and move laterally.</p>
+  </div>
 
-## My Philosophy
-Once I stopped trying to defend the whole system, the path forward became obvious: **reduce what can be touched, and you reduce what can be attacked.**
+  <div class="tactical-card" style="margin:0;">
+    <h4 style="color: var(--neon-green);">THE VALHALLA SOLUTION</h4>
+    <p style="font-size: 0.8rem; color: #888;">We implement <strong>Sovereign Isolation</strong>. By mathematically and structurally limiting how a system interacts with the outside world, we render the most common attack vectors non-existent.</p>
+  </div>
+</div>
 
-**Security isn’t about building higher walls — it’s about giving attackers less to aim at.**
+---
 
-Instead of trying to harden everything, I focused on isolating what mattered and letting the rest stay out of reach.
+### BEYOND "TRUST"
 
-**If something has to connect, make it one-way** — let information flow out without giving anything back to grab onto.
+Our philosophy is built on **Deterministic Results**. We don't mitigate threats; we eliminate the environment where they survive.
 
-**Everything I build comes back to two principles:** reduce what can be touched, and isolate what can’t be.
+* **90% Mitigation Capability:** With the right structural support, the vast majority of automated exploits, ransomware, and unauthorized callbacks are structurally blocked at the boundary.
+* **Operational Continuity:** By simplifying the interface, we ensure that critical mission effects continue even when the surrounding network environment is contested.
 
-The simpler the exposure, the simpler the defense — and simplicity is the only thing that scales.
+> **LEADERSHIP VERDICT:** High-assurance security isn't about adding more software—it's about **removing the opportunity for failure.**
 
-So when I build or assess something now, I start with a simple question: **what’s the smallest surface this thing can survive with?**
-
-When you start from the smallest possible surface, every decision becomes clearer — what to expose, what to isolate, and what to cut entirely.
-
-The systems I trust most aren’t the ones with the most features — they’re the ones with the least exposure.
-
-To me, ‘least exposure’ means stripping a system down to the parts that actually need to touch the outside world — and letting everything else stay sealed.
-
-## Real-World Proof: One-Way Isolation in Action
-Hardware data diodes and unidirectional gateways make this philosophy concrete: outbound data flow only, reverse path physically impossible, protected side kept minimal and untouchable.
-
-Examples of deployed one-way isolation technologies include:
-
-- Optical or FPGA-based data diodes that enforce unidirectional flow, averting threats from the dirty side and keeping the clean side sealed.  
-- Anode/cathode or protocol-break designs that allow outbound transfer but block all return paths — eliminating any "grab" opportunity.  
-- Intelligent gateways that combine diode enforcement with protocol sanitization, isolating high-risk and protected networks.  
-- Send-only to receive-only circuits that mitigate cyber threats at the boundary with minimal exposure on the protected side.  
-- Industrial-to-cloud one-way bridges that use dashed-line enforcement to prevent return paths, keeping critical assets truly isolated.
-
-These systems are widely used in critical infrastructure, defense, and high-security environments — demonstrating exactly what "reduce + isolate" looks like in practice: the dirty side can be compromised, but it never touches what matters.
-
-![Cyber Threat & Diode Mitigation](/assets/img/cyberp.png)  
-**Caption**: Cyber threats averted by hardware one-way isolation.
-
-![One-Way Data Diode Flow Example](/assets/img/data-diode-example.png)  
-**Caption**: Basic unidirectional data flow diagram.
-
-![Unidirectional Gateway Isolation Diagram](/assets/img/unidirectional-gateway.png)  
-**Caption**: Gateway enforcing protocol break and isolation.
-
-![Data Diode Threat Mitigation](/assets/img/data-diode-threat.png)  
-**Caption**: Threat blocked at the boundary with one-way enforcement.
-
-![Drone RAM Payload Integration](/assets/img/drone_1.jpg)  
-**Caption**: Dual-purpose RAM module on tactical UAV — ephemeral execution with <10ms purge.
-
-sales@valhallainnovations.com  
-
-[Back to Home →](/)
+<div style="text-align: center; margin-top: 50px;">
+  <p style="font-size: 0.6rem; color: #444; letter-spacing: 2px;">STRATEGIC SUPPORT BY: 13TH INNOVATIONS UNIT</p>
+  <a href="mailto:sales@valhallainnovations.com?subject=Inquiry: The 90% Doctrine Support" class="btn-dispatch">
+    LEARN MORE: SECURE DISPATCH
+  </a>
+</div>
