@@ -1,30 +1,27 @@
-# --- VALHALLA'S 13TH: CORE CONFIGURATION ---
-title: "Valhalla's 13th Innovations Unit"
-description: "Hardware-Enforced Isolation // CAGE: 188U9"
-baseurl: ""
-url: "https://valhallainnovations.net"
+---
+layout: page
+title: The Vision
+permalink: /vision/
+---
 
-# --- THEME ENGINE ---
-remote_theme: daattali/beautiful-jekyll@master
+<div class="tactical-card hero-node">
+  <div class="status-active"><div class="status-dot"></div> PHASE 3 INITIATIVE: 98%-100% GAP CLOSURE</div>
+  <h1>THE TOTAL CLOSURE VISION</h1>
+  <p class="spec-line">THREE-YEAR STRATEGIC HORIZON</p>
+</div>
 
-# --- VISUAL ENGINE (THE NEON GRID) ---
-css: ["/assets/css/custom.css"]
-stranger_css: ["/assets/css/custom.css"]
+### THE ROADMAP TO 100%
+Current defensive standards allow for a "Margin of Failure." We do not. In 36 months, our objective is to collapse the attack surface entirely.
 
-# --- BRANDING OVERRIDE ---
-show_theme_link: false
-show_github_footer: false
-show_footer_social: false
-bigimg: []
+* **YEAR 1-2:** Scaling systemic exclusion across municipal and infrastructure nodes.
+* **YEAR 3:** Final hardening of hardware-locked compute layers. Achieving **100% persistence denial**.
 
-# --- TACTICAL SIGNATURE ---
-footer-custom-content: >
-  <div style="text-align: center; border-top: 1px solid #00FF41; padding-top: 40px; margin-top: 60px;">
-    <p style="font-family: 'Orbitron'; color: #00FF41; letter-spacing: 3px; font-size: 0.7rem; margin: 0;">
-      POWERED BY: 13TH INNOVATIONS UNIT
-    </p>
-    <a href="mailto:sales@valhallainnovations.com?subject=Inquiry: 13th Unit Support" 
-       style="display: inline-block; background: #00FF41; color: #000; padding: 10px 20px; margin-top: 20px; font-family: 'Orbitron'; font-weight: bold; text-decoration: none; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);">
-       LEARN MORE: SECURE DISPATCH
-    </a>
-  </div>
+<div class="tactical-card" style="text-align: center; border-top: 1px dashed var(--neon-green); margin-top: 60px;">
+  <p style="font-family: 'Orbitron'; color: var(--neon-green); letter-spacing: 2px; font-size: 0.8rem;">
+    POWERED BY: 13TH INNOVATIONS UNIT
+  </p>
+  <br>
+  <a href="mailto:sales@valhallainnovations.com?subject=Inquiry: Phase 3 Development Support" class="btn-dispatch">
+    LEARN MORE: SECURE DISPATCH
+  </a>
+</div>
