@@ -1,48 +1,30 @@
-# --- VALHALLA INNOVATIONS: CORE CONFIGURATION ---
-title: Valhalla's 13th Innovations Unit
-description: Hardware-Enforced Isolation // CAGE: 188U9
+# --- VALHALLA'S 13TH: CORE CONFIGURATION ---
+title: "Valhalla's 13th Innovations Unit"
+description: "Hardware-Enforced Isolation // CAGE: 188U9"
 baseurl: ""
 url: "https://valhallainnovations.net"
 
 # --- THEME ENGINE ---
 remote_theme: daattali/beautiful-jekyll@master
 
-# --- CORPORATE IDENTITY ---
-author:
-  name: "13th Innovations Unit"
-  email: "sales@valhallainnovations.com"
-
-# --- NAVIGATION HUD ---
-navbar-links:
-  Home: "/"
-  Architecture: "/architecture/"
-  Pilot Program: "/pilot/"
-  About: "/about/"
-  Contact: "/contact/"
-
-# --- VISUAL ENGINE (THE POP) ---
-# This forces the Neon Green & Obsidian override
+# --- VISUAL ENGINE (THE NEON GRID) ---
 css: ["/assets/css/custom.css"]
 stranger_css: ["/assets/css/custom.css"]
 
-# --- KILL THE FOG & SUPPLEMENT LINKS ---
-bigimg: []
+# --- BRANDING OVERRIDE ---
 show_theme_link: false
 show_github_footer: false
 show_footer_social: false
-footer-links-active: false
+bigimg: []
 
-# --- MISSION FOOTER: 13TH UNIT SIGNATURE ---
+# --- TACTICAL SIGNATURE ---
 footer-custom-content: >
   <div style="text-align: center; border-top: 1px solid #00FF41; padding-top: 40px; margin-top: 60px;">
     <p style="font-family: 'Orbitron'; color: #00FF41; letter-spacing: 3px; font-size: 0.7rem; margin: 0;">
       POWERED BY: 13TH INNOVATIONS UNIT
     </p>
-    <p style="font-family: 'JetBrains Mono'; color: #444; font-size: 0.5rem; margin-top: 10px; text-transform: uppercase;">
-      ENTITY: VALHALLA'S THIRTEEN LLC // CAGE: 188U9 // JAX-ENCLAVE-01
-    </p>
+    <a href="mailto:sales@valhallainnovations.com?subject=Inquiry: 13th Unit Support" 
+       style="display: inline-block; background: #00FF41; color: #000; padding: 10px 20px; margin-top: 20px; font-family: 'Orbitron'; font-weight: bold; text-decoration: none; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);">
+       LEARN MORE: SECURE DISPATCH
+    </a>
   </div>
-
-# --- TECHNICAL SETTINGS ---
-markdown: kramdown
-highlighter: rouge
