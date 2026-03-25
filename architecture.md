@@ -2,64 +2,48 @@
 layout: page
 title: THORVEIL Architecture – Valhalla Ghost Layer
 permalink: /architecture/
-description: Diode-isolated, RAM-only, PQC-anchored compute environment for ephemeral, quantum-resilient endpoints.
+description: Hardware-enforced protocol isolation and stateless compute for critical infrastructure.
 seo:
-  title: THORVEIL Architecture — Valhalla Ghost Layer
-  description: Diode-isolated, RAM-only, PQC-anchored compute environment for ephemeral, quantum-resilient endpoints.
-  twitter_card: summary_large_image
-  og_type: article
-  canonical: https://valhallainnovations.net/architecture/
+  title: THORVEIL Architecture — Valhalla Innovations
+  description: Hardware-enforced data diode and stateless execution environments for high-assurance endpoints.
 ---
 
-# Valhalla Ghost Layer
+# THORVEIL Architecture
 
-**Diode-isolated, RAM-only, PQC-anchored compute environment**
+**Sovereign Hardware Isolation // Deterministic Security**
 
-A diode-isolated, RAM-only, PQC-anchored compute environment that eliminates persistent identity, resists forensic analysis, and enables secure autonomy in contested environments.
+The THORVEIL platform replaces software-defined "trust" with hardware-enforced "certainty." By utilizing a physical protocol break, the system enables secure data transit and execution in contested environments where standard firewalls are insufficient.
 
-THORVEIL is the platform that delivers this capability through a physically enforced, quantum-resilient endpoint isolation architecture.
+<div class="tactical-card">
+  <h2>The Three-Tier Architecture</h2>
+  
+  <p><strong>1. External Node (Ingress/Untrusted)</strong><br>
+  A hardened interface node that manages standard network connectivity. Designed to be sacrificial; even in a total compromise scenario, no logical or electrical path exists to the internal enclave.</p>
 
-### Core Architecture
+  <p><strong>2. The Photonic Moat (Physical Diode)</strong><br>
+  A custom-engineered hardware bridge that converts data to light for unidirectional transmission. This physical gap ensures a zero-return path, rendering remote Command-and-Control (C2) callbacks mathematically impossible.</p>
 
-- **Dirty Side** (exposed, assumed hostile)  
-  Standard or hardened host OS with full network access and normal applications.  
-  **Security model**: Can be fully compromised — no impact to clean side.
+  <p><strong>3. Secure Enclave (Egress/Protected)</strong><br>
+  A stateless, RAM-only execution environment. By operating entirely in volatile memory, the system ensures absolute forensic neutrality and eliminates the possibility of persistent malware.</p>
+</div>
 
-- **Hardware Data Diode** (unidirectional bridge)  
-  Commercial-grade or custom FPGA-based one-way gateway.  
-  **Behavior**: Data flows out only (telemetry, logs, results). No reverse path possible — physics-level enforcement.
+### **Operational Security & Guarantees**
 
-- **Clean Side** (protected enclave)  
-  RAM-only OS (Alpine toram variant or custom micro-distro) for ephemeral execution.  
-  **Properties**:  
-  - Zero persistence after power loss  
-  - SHA-3 measured boot + post-quantum signatures (Dilithium)  
-  - Kyber key exchange for outbound tunnels  
-  - Ghost-layer identity overlay (ephemeral IDs, no static MAC/UUID/hostname)
+By shifting from logical barriers to physical ones, the Valhalla Ghost Layer provides a predictable security posture for critical infrastructure:
 
-### Outcome & Security Guarantees
+* **Zero-Persistence Architecture:** No local storage write-paths exist within the enclave. All data is zeroized upon power loss.
+* **Integrity Verification:** Every boot cycle is validated through multi-stage measured boot sequences anchored in hardware.
+* **Post-Quantum Resilience:** Internal logic and communications utilize NIST-standard cryptographic primitives designed to withstand next-generation decryption threats.
+* **Identity Masking:** Devices utilize ephemeral identifiers and ghost-layer overlays to prevent discovery via traditional network reconnaissance.
 
-**Compromise on the dirty side becomes irrelevant.**
+### **Compliance & Procurement**
+**CAGE Code:** 188U9  
+**Primary NAICS:** 541512, 541330  
 
-- No remote code execution  
-- No persistent forensic artifacts  
-- No discoverable identity  
-- Quantum-resilient cryptography reduces future decryption risk
+For detailed technical specifications, SCADA integration documentation, or to request a **Security Auditor's Whitepaper**, please contact our engineering team.
 
-**Operational Benefits**
-- Rapid recovery via power-cycle resets  
-- Minimal attack surface from ephemeral execution and hardware one-way flow  
-- Predictable forensic posture for defenders and auditors
+<div style="margin-top: 30px;">
+  <a href="mailto:sales@valhallainnovations.com" class="btn-pilot">REQUEST TECHNICAL WHITEPAPER</a>
+</div>
 
-### Designed For
-
-Primary use cases:
-- Critical infrastructure endpoints  
-- Defense field devices in contested environments  
-- Secure administrative terminals  
-- Regulated healthcare and research endpoints
-
-[Contact for prototypes, pilots, or partnerships → /contact/]
-
-sales@valhallainnovations.com  
 [Back to Home →](/)
