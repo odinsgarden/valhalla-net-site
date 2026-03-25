@@ -1,41 +1,49 @@
-/* VALHALLA INNOVATIONS: TOP-TIER OVERRIDE v2.1 */
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
-
+/* VALHALLA.NET: HIGH-RESOLUTION TACTICAL OVERRIDE */
 :root {
-  --v-green: #00FF41;
-  --v-black: #050505;
-  --v-glass: rgba(18, 18, 18, 0.85);
-  --v-border: rgba(0, 255, 65, 0.2);
+  --v-blue: #00d4ff; /* The Electric Blue you like */
+  --v-void: #020202;
+  --v-panel: rgba(10, 10, 10, 0.9);
+  --v-border: rgba(0, 212, 255, 0.3);
 }
 
 body {
-  background-color: var(--v-black) !important;
-  color: #fff !important;
-  font-family: 'JetBrains Mono', monospace !important;
+  background-color: var(--v-void) !important;
+  background-image: 
+    radial-gradient(circle at 50% 0%, rgba(0, 212, 255, 0.08) 0%, transparent 50%),
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 40px 40px, 40px 40px;
+  color: #ffffff !important;
   -webkit-font-smoothing: antialiased;
 }
 
-/* 1. Tactical Glass Cards */
-.tactical-card {
-  background: var(--v-glass);
-  border: 1px solid var(--v-border);
-  backdrop-filter: blur(12px);
-  padding: 2.5rem;
-  margin: 30px 0;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+/* Sharp, High-Res Cards */
+.tactical-card, .blueprint-module {
+  background: var(--v-panel) !important;
+  border: 1px solid var(--v-border) !important;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+  backdrop-filter: none; /* Removing blur stops the 'foggy' look */
+  border-radius: 0;
+  padding: 40px;
+  position: relative;
 }
 
-.tactical-card:hover {
-  border-color: var(--v-green);
-  box-shadow: 0 0 25px rgba(0, 255, 65, 0.15);
+/* Accent Corner Brackets for that Professional look */
+.tactical-card::before {
+  content: "";
+  position: absolute;
+  top: -1px; left: -1px;
+  width: 20px; height: 20px;
+  border-top: 2px solid var(--v-blue);
+  border-left: 2px solid var(--v-blue);
 }
 
 h1, h2, h3 {
-  color: var(--v-green) !important;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px rgba(0, 255, 65, 0.2);
+  font-family: 'Orbitron', sans-serif !important;
+  color: var(--v-blue) !important;
+  letter-spacing: 4px;
+  text-shadow: 0 0 15px rgba(0, 212, 255, 0.4);
+}
 }
 
 /* 2. Tactical Button */
