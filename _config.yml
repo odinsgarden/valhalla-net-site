@@ -1,49 +1,48 @@
 # --- VALHALLA INNOVATIONS: CORE CONFIGURATION ---
-title: Valhalla Innovations
-description: Security through simplicity — reduce exposure, isolate what matters.
+title: Valhalla's 13th Innovations Unit
+description: Hardware-Enforced Isolation // CAGE: 188U9
 baseurl: ""
 url: "https://valhallainnovations.net"
 
 # --- THEME ENGINE ---
 remote_theme: daattali/beautiful-jekyll@master
 
-# --- CORPORATE IDENTITY (SCRUBBED) ---
+# --- CORPORATE IDENTITY ---
 author:
-  name: "Valhalla Innovations"
+  name: "13th Innovations Unit"
   email: "sales@valhallainnovations.com"
-  github_username: "odinsgarden"
 
 # --- NAVIGATION HUD ---
 navbar-links:
   Home: "/"
   Architecture: "/architecture/"
-  The Pilot Program: "/pilot/"
-  Complexity: "/complexity/"
-  Vision: "/vision/"
+  Pilot Program: "/pilot/"
   About: "/about/"
   Contact: "/contact/"
 
-# --- SOCIAL & OUTREACH ---
-social:
-  - title: Email
-    url: "mailto:sales@valhallainnovations.com"
-  - title: GitHub
-    url: "https://github.com/odinsgarden"
-  - title: LinkedIn
-    url: "https://www.linkedin.com/in/thor-ustin-whittaker-b96788252"
-
 # --- VISUAL ENGINE (THE POP) ---
-# This links your high-resolution custom tactical styles
+# This forces the Neon Green & Obsidian override
 css: ["/assets/css/custom.css"]
+stranger_css: ["/assets/css/custom.css"]
+
+# --- KILL THE FOG & SUPPLEMENT LINKS ---
+bigimg: []
+show_theme_link: false
+show_github_footer: false
+show_footer_social: false
+footer-links-active: false
+
+# --- MISSION FOOTER: 13TH UNIT SIGNATURE ---
+footer-custom-content: >
+  <div style="text-align: center; border-top: 1px solid #00FF41; padding-top: 40px; margin-top: 60px;">
+    <p style="font-family: 'Orbitron'; color: #00FF41; letter-spacing: 3px; font-size: 0.7rem; margin: 0;">
+      POWERED BY: 13TH INNOVATIONS UNIT
+    </p>
+    <p style="font-family: 'JetBrains Mono'; color: #444; font-size: 0.5rem; margin-top: 10px; text-transform: uppercase;">
+      ENTITY: VALHALLA'S THIRTEEN LLC // CAGE: 188U9 // JAX-ENCLAVE-01
+    </p>
+  </div>
 
 # --- TECHNICAL SETTINGS ---
 markdown: kramdown
 highlighter: rouge
-show_excerpts: true
-timezone: America/New_York
-minimal: true
-
-# --- MISSION FOOTER ---
-# Professional, clinical, and includes CAGE for procurement
-footer-text: "Valhalla Innovations (CAGE: 188U9) — THORVEIL: Hardware-enforced isolation for high-assurance endpoints."
-footer-links-active: false
