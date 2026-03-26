@@ -1,83 +1,44 @@
-/* VALHALLA'S 13TH: PURE NEON OVERRIDE V6.0 - NO BLUE / NO FOG */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap');
+---
+layout: home
+title: 13th Innovations Unit // Tech Tuesday Brief
+---
 
-:root {
-  --neon-green: #00FF41 !important;
-  --v-black: #020202 !important;
-}
+<div class="tactical-card hero-node">
+  <div class="status-active"><div class="status-dot"></div> SYSTEM STATE: SECURE // CAGE: 188U9</div>
+  <h1>13th INNOVATIONS UNIT</h1>
+  <p class="spec-line">VALHALLA THIRTEEN LLC // SOVEREIGN HARDWARE</p>
+  
+  <div style="margin-top: 30px;">
+    <a href="mailto:ceo@mclaren-industries.com?subject=SOCOM EVALUATION: ThorVeil USFF Inquiry" class="btn-dispatch">
+      INITIATE SECURE DISPATCH
+    </a>
+  </div>
+</div>
 
-/* 1. THE GRID SYSTEM: Sharp lines, no blur */
-html, body, .main-content, .wrapper, .site-header, .site-footer, main, article, section {
-  background-color: var(--v-black) !important;
-  background-image: 
-    linear-gradient(rgba(0, 255, 65, 0.08) 1.5px, transparent 1.5px),
-    linear-gradient(90deg, rgba(0, 255, 65, 0.08) 1.5px, transparent 1.5px) !important;
-  background-size: 45px 45px !important;
-  color: #FFFFFF !important;
-  font-family: 'JetBrains Mono', monospace !important;
-  border: none !important;
-  box-shadow: none !important;
-}
+<div class="blueprint-grid">
+  
+  <div class="tactical-card asset-node">
+    <h3 class="neon-text">THORVEIL-USFF (5x2)</h3>
+    <p class="vague-desc">Hardware-enforced unidirectional isolation via 10mm photonic gap. Dual-architect logic gates designed for zero-persistence in contested environments.</p>
+    <ul style="color: #00FF41; font-size: 0.85em; list-style: none; padding: 0;">
+      <li>[+] TRL-6 PROTOTYPE STATUS</li>
+      <li>[+] 5" x 2" ULTRA-SMALL FORM FACTOR</li>
+      <li>[+] NO ELECTRICAL RETURN PATH</li>
+    </ul>
+  </div>
 
-/* 2. TEXT & HEADERS: High-Res Neon */
-h1, h2, h3, .site-title, .post-title, .page-heading {
-  font-family: 'Orbitron', sans-serif !important;
-  color: var(--neon-green) !important;
-  text-transform: uppercase !important;
-  letter-spacing: 6px !important;
-  text-shadow: 0 0 12px rgba(0, 255, 65, 0.5) !important;
-}
+  <div class="tactical-card asset-node">
+    <h3 class="neon-text">DUAL-USE CAPABILITY</h3>
+    <p class="vague-desc">Engineered for Cross-Domain Solutions (CDS). Validated for both Critical Infrastructure (SCADA) and Unmanned Systems Control (UXS).</p>
+    <ul style="color: #00FF41; font-size: 0.85em; list-style: none; padding: 0;">
+      <li>[+] DENIED-ENVIRONMENT CONTINUITY</li>
+      <li>[+] EDGE-RESIDENT LOGIC GATES</li>
+      <li>[+] NON-PERSISTENT COMPUTE BOOT</li>
+    </ul>
+  </div>
 
-/* 3. THE CARDS: No White Backgrounds */
-.tactical-card, .blueprint-grid div {
-  background: rgba(0, 0, 0, 0.9) !important; /* Slight opacity for depth */
-  border: 1px solid rgba(0, 255, 65, 0.3) !important;
-  border-left: 4px solid var(--neon-green) !important;
-  padding: 30px !important;
-  margin-bottom: 20px !important;
-}
+</div>
 
-/* 4. THE ACTION BUTTON: Angled Neon Green */
-.btn-dispatch, .btn-pilot, .btn, button {
-  background-color: var(--neon-green) !important;
-  color: #000 !important;
-  font-family: 'Orbitron' !important;
-  font-weight: 900 !important;
-  padding: 16px 42px !important;
-  text-decoration: none !important;
-  display: inline-block !important;
-  clip-path: polygon(8% 0, 100% 0, 92% 100%, 0% 100%) !important;
-  border: none !important;
-  cursor: pointer !important;
-  transition: 0.2s ease-in-out !important;
-}
-
-.btn-dispatch:hover {
-  filter: brightness(1.2) !important;
-  box-shadow: 0 0 20px var(--neon-green) !important;
-}
-
-/* 5. CLEANUP: Kill theme artifacts */
-footer, .footer-col-wrapper, .site-footer {
-  border-top: 1px solid var(--neon-green) !important;
-  padding: 50px 0 !important;
-}
-
-a {
-  color: var(--neon-green) !important;
-  text-decoration: none !important;
-}
-/* ELIMINATE EXTERNAL BRANDING */
-.theme-by, .beautiful-jekyll-footer, a[href*="beautiful-jekyll"] {
-  display: none !important;
-  visibility: hidden !important;
-  height: 0 !important;
-  opacity: 0 !important;
-}
-
-/* TACTICAL FOOTER REINFORCEMENT */
-footer, .site-footer {
-  background-color: #000000 !important;
-  border-top: 1px solid #00FF41 !important;
-  padding-bottom: 80px !important;
-}
+<div class="tactical-card status-footer">
+  <p>TECHNICAL DATA RESTRICTED TO VERIFIED CAGE HOLDERS AND DEPARTMENT OF DEFENSE EVALUATORS.</p>
+</div>
