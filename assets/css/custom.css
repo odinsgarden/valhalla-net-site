@@ -1,60 +1,109 @@
----
-layout: home
-title: Valhalla's 13th Innovations Unit
----
+/* VALHALLA'S 13TH INNOVATIONS UNIT: MISSION-READY UI */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap');
 
-<style>
-  /* Force background to stay black even if theme tries to override */
-  body, .main-content, .wrapper, #main, .container {
-    background-color: #020202 !important;
-    background-image: 
-      linear-gradient(rgba(0, 255, 65, 0.05) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(0, 255, 65, 0.05) 1px, transparent 1px) !important;
-    background-size: 50px 50px !important;
-  }
-</style>
+:root {
+  --neon-green: #00FF41;   /* Tactical HUD Green */
+  --obsidian: #020202;     /* Absolute Black */
+  --panel-hex: rgba(0, 255, 65, 0.03);
+  --v-border: rgba(0, 255, 65, 0.3);
+}
 
-<div class="tactical-card hero-node" style="background: rgba(0,0,0,0.9) !important; border: 1px solid #00FF41 !important; padding: 40px; margin-bottom: 20px;">
-  <div class="status-active" style="color: #00FF41 !important; font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 2px;">
-    <span style="display: inline-block; width: 8px; height: 8px; background: #00FF41; border-radius: 50%; margin-right: 10px; box-shadow: 0 0 10px #00FF41;"></span>
-    MISSION PROFILE: DISCONNECTED // CAGE: 188U9
-  </div>
-  
-  <h1 style="color: #00FF41 !important; font-family: 'Orbitron', sans-serif !important; text-transform: uppercase; letter-spacing: 8px; margin-top: 20px; text-shadow: 0 0 15px rgba(0, 255, 65, 0.4);">
-    VALHALLA'S 13th
-  </h1>
-  <p style="color: #00FF41 !important; font-family: 'JetBrains Mono'; opacity: 0.7; letter-spacing: 4px; font-size: 0.8rem; text-transform: uppercase;">
-    SOVEREIGN HARDWARE // INNOVATIONS UNIT
-  </p>
-  
-  <div style="margin-top: 40px;">
-    <a href="mailto:sales@valhallainnovations.com?subject=Inquiry: Municipal Pilot Program" 
-       style="background: #00FF41 !important; color: #000 !important; font-family: 'Orbitron' !important; font-weight: 900 !important; padding: 15px 40px !important; text-decoration: none !important; display: inline-block !important; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%) !important;">
-      INITIATE SECURE DISPATCH
-    </a>
-  </div>
-</div>
+body {
+  background-color: var(--obsidian) !important;
+  color: #FFFFFF !important;
+  font-family: 'JetBrains Mono', monospace !important;
+  background-image: 
+    linear-gradient(var(--v-border) 1px, transparent 1px), 
+    linear-gradient(90deg, var(--v-border) 1px, transparent 1px);
+  background-size: 45px 45px;
+  background-attachment: fixed;
+  margin: 0;
+}
 
-<div class="blueprint-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
-  
-  <div class="tactical-card asset-node" style="background: transparent !important; border: 1px solid rgba(0, 255, 65, 0.2) !important; padding: 30px;">
-    <h3 style="color: #00FF41 !important; font-family: 'Orbitron'; letter-spacing: 2px;">THORVEIL ARCHITECTURE</h3>
-    <p style="color: #888 !important; font-size: 0.85rem; line-height: 1.6;">Hardware-enforced unidirectional isolation and non-persistent compute environments for critical infrastructure protection.</p>
-    <a href="mailto:sales@valhallainnovations.com?subject=Request: ThorVeil Technical Brief" 
-       style="color: #00FF41 !important; font-family: 'JetBrains Mono'; font-size: 0.7rem; text-decoration: none !important; border-bottom: 1px dashed #00FF41;">[ REQUEST SCHEMATICS ]</a>
-  </div>
+/* THE TACTICAL CONTAINER */
+.tactical-card {
+  background: rgba(5, 5, 5, 0.95) !important;
+  border: 1px solid var(--v-border) !important;
+  border-left: 4px solid var(--neon-green) !important;
+  padding: 40px;
+  margin: 30px 0;
+  position: relative;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+  overflow: hidden;
+}
 
-  <div class="tactical-card asset-node" style="background: transparent !important; border: 1px solid rgba(0, 255, 65, 0.2) !important; padding: 30px;">
-    <h3 style="color: #00FF41 !important; font-family: 'Orbitron'; letter-spacing: 2px;">GHOST-1 PLATFORM</h3>
-    <p style="color: #888 !important; font-size: 0.85rem; line-height: 1.6;">Autonomous edge-resident logic gates. Engineered for operational continuity in denied or contested environments.</p>
-    <a href="mailto:sales@valhallainnovations.com?subject=Request: GHOST-1 Capability Statement" 
-       style="color: #00FF41 !important; font-family: 'JetBrains Mono'; font-size: 0.7rem; text-decoration: none !important; border-bottom: 1px dashed #00FF41;">[ REQUEST SPECS ]</a>
-  </div>
+/* SUBTLE SCANLINE EFFECT */
+.tactical-card::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 2;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+}
 
-</div>
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif !important;
+  color: var(--neon-green) !important;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-shadow: 0 0 15px rgba(0, 255, 65, 0.4);
+}
 
-<div class="tactical-card status-footer" style="text-align: center; margin-top: 80px; border-top: 1px solid #111; padding-top: 40px;">
-  <p style="color: #444 !important; font-family: 'JetBrains Mono'; font-size: 0.6rem; letter-spacing: 2px;">
-    TECHNICAL DATA RESTRICTED TO VERIFIED CAGE HOLDERS AND MUNICIPAL DIRECTORS.
-  </p>
-</div>
+/* THE COMMAND BUTTON */
+.btn-dispatch {
+  background: var(--neon-green) !important;
+  color: #000 !important;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  padding: 18px 45px;
+  text-decoration: none;
+  display: inline-block;
+  clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%);
+  border: none;
+  transition: 0.3s;
+  letter-spacing: 2px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn-dispatch:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 25px var(--neon-green);
+  filter: brightness(1.2);
+}
+
+/* DATA REGISTRY TABLES */
+.hr-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background: rgba(0, 255, 65, 0.02);
+}
+
+.hr-table td {
+  padding: 15px;
+  border: 1px solid rgba(0, 255, 65, 0.1);
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.hr-table td strong { 
+  color: var(--neon-green); 
+  font-family: 'Orbitron';
+  letter-spacing: 1px;
+}
+
+/* UTILITY CLASSES */
+.status-tag {
+  font-size: 0.6rem;
+  color: var(--neon-green);
+  border: 1px solid var(--neon-green);
+  padding: 4px 10px;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
