@@ -1,56 +1,121 @@
 ---
-layout: page
-title: About Valhalla Innovations
-permalink: /about/
+layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Unit | Valhalla 13th</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --v-green: #00FF41; --v-black: #020202; --v-glow: rgba(0, 255, 65, 0.2); }
+        
+        body, html { 
+            background-color: var(--v-black); 
+            color: #fff; 
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0; padding: 0; overflow-x: hidden;
+        }
 
-<div class="tactical-card hero-node">
-  <div class="status-active"><div class="status-dot"></div> UNIT STATUS: OPERATIONAL // CAGE: 188U9</div>
-  <h1>13TH INNOVATIONS UNIT</h1>
-  <p class="spec-line">ADVANCED DEFENSE RESEARCH & DEVELOPMENT</p>
+        .terminal-container {
+            width: 100%; min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center;
+            background-image: linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* HEADER HUD */
+        .nav-header {
+            width: 90%; max-width: 1200px;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid var(--v-glow);
+            padding: 15px 0; margin-bottom: 50px;
+        }
+
+        .logo { font-family: 'Orbitron'; color: var(--v-green); font-weight: 900; letter-spacing: 2px; text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--v-green); text-shadow: 0 0 10px var(--v-green); }
+
+        .content-body { width: 90%; max-width: 800px; margin-bottom: 100px; }
+
+        .tactical-card {
+            border: 1px solid var(--v-glow);
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+
+        h1, h2, h3 { font-family: 'Orbitron'; color: var(--v-green); text-transform: uppercase; letter-spacing: 3px; }
+        
+        .registry-table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        .registry-table td { padding: 12px; border: 1px solid var(--v-glow); font-size: 0.8rem; }
+        .label { color: #555; text-transform: uppercase; font-weight: bold; width: 40%; }
+        .value { color: var(--v-green); }
+
+        .btn-dispatch {
+            color: var(--v-green); text-decoration: none; font-size: 0.7rem;
+            border: 1px solid var(--v-green); padding: 10px 20px;
+            display: inline-block; transition: 0.3s;
+        }
+        .btn-dispatch:hover { background: var(--v-green); color: #000; }
+
+        footer { padding: 40px; text-align: center; border-top: 1px solid #111; width: 100%; margin-top: auto; }
+    </style>
+</head>
+<body>
+
+<div class="terminal-container">
+    
+    <nav class="nav-header">
+        <a href="/" class="logo">VALHALLA'S 13TH</a>
+        <div class="nav-links">
+            <a href="/architecture/">Architecture</a>
+            <a href="/pilot/">Pilot</a>
+            <a href="/vision/">Vision</a>
+            <a href="/complexity/">Doctrine</a>
+            <a href="/about/">About</a>
+        </div>
+    </nav>
+
+    <div class="content-body">
+        
+        <div class="tactical-card" style="border-left: 4px solid var(--v-green);">
+            <p style="font-size: 0.6rem; color: var(--v-green); letter-spacing: 3px; margin: 0;">UNIT STATUS: OPERATIONAL // CAGE: 188U9</p>
+            <h1>13th Innovations Unit</h1>
+            <p style="color: #888; font-size: 0.85rem;">Advanced Defense Research & Development. A specialized division of Valhalla's Thirteen LLC focused on hardware-enforced systemic exclusion.</p>
+        </div>
+
+        <div class="tactical-card">
+            <h3>Corporate Registry</h3>
+            <table class="registry-table">
+                <tr><td class="label">Legal Entity</td><td class="value">Valhalla's Thirteen LLC</td></tr>
+                <tr><td class="label">CAGE Code</td><td class="value">188U9</td></tr>
+                <tr><td class="label">UEI</td><td class="value">ZQSVTGA3E563</td></tr>
+                <tr><td class="label">Primary Hub</td><td class="value">Jacksonville, FL</td></tr>
+            </table>
+        </div>
+
+        <div class="tactical-card">
+            <h3>Principal Architect</h3>
+            <p style="color: #fff; margin-bottom: 20px;"><strong>Thor Whittaker</strong><br><span style="color: #666; font-size: 0.7rem;">Founder & Ghost-Layer Architect</span></p>
+            <div style="display: flex; gap: 15px;">
+                <a href="mailto:sales@valhallainnovations.com" class="btn-dispatch">SECURE DISPATCH</a>
+                <a href="https://github.com/odinsgarden" class="btn-dispatch">GITHUB</a>
+                <a href="https://www.linkedin.com/in/thor-ustin-whittaker-b96788252" class="btn-dispatch">LINKEDIN</a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p style="font-size: 0.55rem; color: #333; letter-spacing: 3px;">
+            ENTITY: VALHALLA'S THIRTEEN LLC // JAX-ENCLAVE-01
+        </p>
+    </footer>
+
 </div>
 
-<div class="tactical-card">
-  <p style="color: #fff; line-height: 1.6;">
-    A specialized division of **Valhalla's Thirteen LLC**, focused on rapid-reaction hardware security, systemic exclusion, and ThorVeil infrastructure protection. 
-  </p>
-  <p style="color: var(--neon-green); font-size: 0.8rem; font-family: 'Orbitron'; margin-top: 15px;">
-    OBJECTIVE: ACHIEVE 100% PERSISTENCE DENIAL WITHIN 36 MONTHS.
-  </p>
-</div>
-
-### CORPORATE REGISTRY: JAX-ENCLAVE-01
-
-<div class="tactical-card" style="padding: 20px !important;">
-| ENTITY DATA | CLASSIFICATION VALUE |
-| :--- | :--- |
-| **LEGAL ENTITY** | <span style="color: var(--neon-green);">VALHALLA'S THIRTEEN LLC</span> |
-| **TACTICAL UNIT** | <span style="color: var(--neon-green);">13TH INNOVATIONS UNIT</span> |
-| **CAGE CODE** | <span style="color: var(--neon-green);">188U9</span> |
-| **UEI** | <span style="color: var(--neon-green);">ZQSVTGA3E563</span> |
-| **PRIMARY HUB** | <span style="color: var(--neon-green);">JACKSONVILLE, FL</span> |
-</div>
-
----
-
-### THE THORVEIL ARCHITECTURE
-Our core capability, the **Valhalla Ghost Layer**, utilizes hardware-enforced isolation to break the Cyber Kill Chain. By governing the directional flow of information at the boundary, we neutralize the most sophisticated external threat vectors.
-
-> **SYSTEMIC VERDICT:** Absolute security is not found in software patches, but in the **Physics of Exclusion**. We eliminate the environment where an adversary survives.
-
----
-
-### PRINCIPAL ARCHITECT
-**THOR WHITTAKER** *Founder & Ghost-Layer Architect*
-
-<div style="margin-top: 20px; display: flex; flex-wrap: wrap; gap: 15px;">
-  <a href="mailto:sales@valhallainnovations.com?subject=Secure%20Dispatch:%20Architect%20Inquiry" style="color: var(--neon-green); font-size: 0.7rem; text-decoration: none;">[ SECURE DISPATCH ]</a>
-  <a href="https://github.com/odinsgarden" style="color: var(--neon-green); font-size: 0.7rem; text-decoration: none;">[ GITHUB ]</a>
-  <a href="https://www.linkedin.com/in/thor-ustin-whittaker-b96788252" style="color: var(--neon-green); font-size: 0.7rem; text-decoration: none;">[ LINKEDIN ]</a>
-</div>
-
-<div style="text-align: center; margin-top: 60px;">
-  <a href="/" class="btn-dispatch" style="background: transparent !important; border: 1px solid var(--neon-green) !important; color: var(--neon-green) !important;">
-    RETURN TO COMMAND HUB
-  </a>
-</div>
+</body>
+</html>
