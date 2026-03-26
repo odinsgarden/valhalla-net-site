@@ -30,17 +30,20 @@ permalink: /architecture/
         <a href="/about/">[ ABOUT ]</a>
     </nav>
     <div class="content">
-        <p style="color: var(--v-green); font-size: 0.6rem;">// ENCLAVE-01 // TECHNICAL SCHEMATICS //</p>
-        <h1>THORVEIL Architecture</h1>
+        <p style="color: var(--v-green); font-size: 0.6rem;">// ENCLAVE-01 // CLASSIFIED ARCHITECTURE //</p>
+        <h1>THORVEIL SYSTEM</h1>
+        
         <div class="spec-box">
-            <h3>HARDWARE PROTOCOL BREAK</h3>
-            <p>Physical isolation of logic gates to ensure unidirectional data flow. Zero return-path architecture.</p>
+            <h3>HARDWARE-ENFORCED EXCLUSION</h3>
+            <p>Structural isolation at the physical layer to ensure systemic integrity. Engineered to eliminate external influence and unauthorized persistence.</p>
         </div>
+
         <div class="spec-box">
-            <h3>STATELESS EXECUTION</h3>
-            <p>Volatile-only RAM environments. Absolute forensic neutrality upon mission completion.</p>
+            <h3>DETERMINISTIC CONTINUITY</h3>
+            <p>High-assurance operational environments designed for mission-critical effects. The system maintains a zero-footprint state across all cycles.</p>
         </div>
-        <a href="mailto:sales@valhallainnovations.com?subject=Schematic Request" style="color: #000; background: var(--v-green); padding: 10px 20px; text-decoration: none; font-weight: bold; font-family: 'Orbitron'; font-size: 0.8rem; display: inline-block; margin-top: 20px;">REQUEST SCHEMATICS</a>
+
+        <a href="mailto:sales@valhallainnovations.com?subject=Strategic Briefing Request" style="color: #000; background: var(--v-green); padding: 10px 20px; text-decoration: none; font-weight: bold; font-family: 'Orbitron'; font-size: 0.8rem; display: inline-block; margin-top: 20px;">REQUEST STRATEGIC BRIEF</a>
     </div>
 </body>
 </html>
