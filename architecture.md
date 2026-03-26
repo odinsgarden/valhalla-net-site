@@ -1,46 +1,117 @@
 ---
-layout: page
-title: THORVEIL Architecture
-permalink: /architecture/
+layout: null
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THORVEIL Architecture | Valhalla 13th</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --v-green: #00FF41; --v-black: #020202; --v-glow: rgba(0, 255, 65, 0.2); }
+        
+        body, html { 
+            background-color: var(--v-black); 
+            color: #fff; 
+            font-family: 'JetBrains Mono', monospace;
+            margin: 0; padding: 0; overflow-x: hidden;
+        }
 
-<div class="tactical-card">
-  <div class="status-active"><div class="status-dot"></div> PROTOCOL: SECURE-ENCLAVE</div>
-  # THORVEIL ARCHITECTURE
-  ### [ HARDWARE-LOCKED DATA INTEGRITY ]
+        .terminal-container {
+            width: 100%; min-height: 100vh;
+            display: flex; flex-direction: column; align-items: center;
+            background-image: linear-gradient(rgba(0, 255, 65, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
 
-  THORVEIL replaces software-defined "trust" with **Hardware-Enforced Certainty**. By utilizing a physical protocol break, the system ensures secure data transit in environments where standard firewalls are compromised.
+        /* MATCHING HEADER HUD */
+        .nav-header {
+            width: 90%; max-width: 1200px;
+            display: flex; justify-content: space-between; align-items: center;
+            border-bottom: 1px solid var(--v-glow);
+            padding: 15px 0; margin-bottom: 50px;
+        }
+
+        .logo { font-family: 'Orbitron'; color: var(--v-green); font-weight: 900; letter-spacing: 2px; text-decoration: none; }
+        .nav-links { display: flex; gap: 20px; }
+        .nav-links a { color: #888; text-decoration: none; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .nav-links a:hover { color: var(--v-green); text-shadow: 0 0 10px var(--v-green); }
+
+        /* CONTENT CARDS */
+        .content-body { width: 90%; max-width: 900px; margin-bottom: 100px; }
+
+        .tactical-card {
+            border: 1px solid var(--v-glow);
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            margin-bottom: 30px;
+            border-left: 4px solid var(--v-green);
+        }
+
+        h1, h2, h3 { font-family: 'Orbitron'; color: var(--v-green); text-transform: uppercase; letter-spacing: 3px; }
+        p { color: #bbb; line-height: 1.6; font-size: 0.9rem; }
+
+        .status-tag {
+            font-size: 0.6rem; color: var(--v-green); border: 1px solid var(--v-green);
+            padding: 2px 8px; display: inline-block; margin-bottom: 15px;
+        }
+
+        .btn-back {
+            color: var(--v-green); text-decoration: none; font-size: 0.7rem;
+            border: 1px solid var(--v-green); padding: 10px 20px;
+            display: inline-block; margin-top: 20px; transition: 0.3s;
+        }
+        .btn-back:hover { background: var(--v-green); color: #000; }
+
+        footer { padding: 40px; text-align: center; border-top: 1px solid #111; width: 100%; margin-top: auto; }
+    </style>
+</head>
+<body>
+
+<div class="terminal-container">
+    
+    <nav class="nav-header">
+        <a href="/" class="logo">VALHALLA'S 13TH</a>
+        <div class="nav-links">
+            <a href="/architecture/">Architecture</a>
+            <a href="/pilot/">Pilot</a>
+            <a href="/vision/">Vision</a>
+            <a href="/complexity/">Doctrine</a>
+            <a href="/about/">About</a>
+        </div>
+    </nav>
+
+    <div class="content-body">
+        <div class="status-tag">SYSTEM: THORVEIL CORE // ENCLAVE-01</div>
+        <h1>THORVEIL Architecture</h1>
+        <p>The THORVEIL platform replaces software-defined "trust" with hardware-enforced "certainty." By utilizing a physical protocol break, the system enables secure data transit in contested environments.</p>
+
+        <div class="tactical-card">
+            <h3>I. INGRESS ISOLATION</h3>
+            <p>Standard network interfaces are logically and electrically partitioned from the core environment. In the event of an external compromise, no path exists to the internal enclave.</p>
+        </div>
+
+        <div class="tactical-card">
+            <h3>II. PHOTONIC DIODE</h3>
+            <p>A custom-engineered hardware bridge that converts data to light for unidirectional transmission. This physical gap ensures a zero-return path, rendering remote Command-and-Control (C2) callbacks impossible.</p>
+        </div>
+
+        <div class="tactical-card">
+            <h3>III. STATELESS COMPUTE</h3>
+            <p>Volatile-only execution environments ensure absolute forensic neutrality. No persistent data survives a power-cycle event, zeroing the attack surface upon mission completion.</p>
+        </div>
+
+        <a href="/" class="btn-back">RETURN TO HUD</a>
+    </div>
+
+    <footer>
+        <p style="font-size: 0.55rem; color: #333; letter-spacing: 3px;">
+            ENTITY: VALHALLA'S THIRTEEN LLC // CAGE: 188U9
+        </p>
+    </footer>
+
 </div>
 
-### THE TRIPLE-GATE SYSTEM
-
-<div class="blueprint-grid">
-  <div class="tactical-card" style="margin:0;">
-    <h4 style="color: var(--neon-green);">I. INGRESS ISOLATION</h4>
-    <p style="font-size: 0.8rem; color: #888;">Standard network interfaces are logically and electrically partitioned from the core environment.</p>
-  </div>
-
-  <div class="tactical-card" style="margin:0;">
-    <h4 style="color: var(--neon-green);">II. PHOTONIC DIODE</h4>
-    <p style="font-size: 0.8rem; color: #888;">Unidirectional hardware bridge. Rendering remote Command-and-Control (C2) callbacks physically impossible.</p>
-  </div>
-</div>
-
-<div class="tactical-card">
-  <h4 style="color: var(--neon-green);">III. STATELESS EXECUTION</h4>
-  <p style="font-size: 0.8rem; color: #888;">Volatile-only compute environments ensure absolute forensic neutrality. No persistent data survives a power-cycle event.</p>
-</div>
-
----
-
-### MISSION ASSURANCE
-* **EXFILTRATION BLOCK:** Physical-layer prevention of unauthorized data egress.
-* **ZERO-PERSISTENCE:** Automated environment zeroization upon mission completion.
-* **SIGNATURE MASKING:** Obfuscated network presence to prevent reconnaissance.
-
-<div style="text-align: center; margin-top: 50px;">
-  <p style="font-size: 0.6rem; color: #444; letter-spacing: 2px;">TECHNICAL SCHEMATICS RESTRICTED TO CAGE: 188U9 HOLDERS</p>
-  <a href="mailto:sales@valhallainnovations.com?subject=Requesting%20Classified%20Briefing" class="btn-dispatch">
-    REQUEST CLASSIFIED BRIEFING
-  </a>
-</div>
+</body>
+</html>
