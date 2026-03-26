@@ -5,44 +5,44 @@ permalink: /pilot/
 ---
 
 <div class="tactical-card">
-  <div class="status-active"><div class="status-dot"></div> ENROLLMENT: OPEN</div>
-  # 2026 MUNICIPAL PILOT PROGRAM
-  ### HARDWARE-ENFORCED GRID PROTECTION
+  <div class="status-active"><div class="status-dot"></div> ENROLLMENT: OPEN // SLOTS: 03</div>
+  <h1>2026 MUNICIPAL PILOT PROGRAM</h1>
+  <p class="spec-line">HARDWARE-ENFORCED GRID PROTECTION</p>
 </div>
 
-Valhalla's 13th Innovations Unit is seeking three (3) local government partners for the **ThorVeil Bridge** hardware deployment. 
+<div class="tactical-card">
+  <p style="color: #fff; line-height: 1.6;">
+    Valhalla's 13th Innovations Unit is seeking three (3) local government partners for the **ThorVeil Bridge** hardware deployment. This initiative is designed to demonstrate total systemic closure in critical infrastructure.
+  </p>
 
-**PHASE 1 MISSION EFFECTS:**
-* **Physical Layer Isolation:** Unidirectional data flow for sensitive utility telemetry.
-* **Zero-Persistence Compute:** Elimination of on-disk attack surfaces.
-* **Sovereign Navigation:** Fully offline internal reference logic.
-
-<div style="text-align: center; margin-top: 40px;">
-  <a href="mailto:sales@valhallainnovations.com?subject=Pilot Program Inquiry" class="btn-dispatch">
-    INITIATE PILOT DISPATCH
-  </a>
-</div>
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
-        <div style="border-right: 1px solid #333; padding-right: 20px;">
-            <h4 style="color: #00FF41;">WHAT WE PROVIDE</h4>
-            <ul style="color: #ccc; font-size: 0.9em;">
-                <li>Dual-Node Pi 5 Hardware Kit</li>
-                <li>Hardened "Ghost Layer" OS</li>
-                <li>On-site Technical Integration</li>
-                <li>Zero-Persistence Security Audit</li>
-            </ul>
-        </div>
-        <div>
-            <h4 style="color: #00FF41;">PARTNER COMMITMENT</h4>
-            <ul style="color: #ccc; font-size: 0.9em;">
-                <li>Discounted Pilot Fee: <strong>$2,450</strong></li>
-                <li>Feedback on SCADA Interoperability</li>
-                <li>Permission for Technical Case Study</li>
-            </ul>
-        </div>
+  <div class="blueprint-grid" style="margin-top: 30px;">
+    <div style="border-right: 1px solid var(--v-border); padding-right: 20px;">
+      <h4 style="color: var(--neon-green); font-family: 'Orbitron';">MISSION ASSETS</h4>
+      <ul style="color: #888; font-size: 0.85rem; list-style-type: '● '; padding-left: 15px;">
+        <li>Dual-Node High-Assurance Hardware</li>
+        <li>Hardened "Ghost Layer" Environment</li>
+        <li>On-site Technical Integration</li>
+        <li>Zero-Persistence Security Audit</li>
+      </ul>
     </div>
-    
-    <p style="text-align: center; margin-top: 25px;">
-        <a href="/contact/" style="background: #00FF41; color: #000; padding: 10px 20px; text-decoration: none; font-weight: bold;">APPLY FOR PILOT SLOT</a>
-    </p>
+
+    <div style="padding-left: 10px;">
+      <h4 style="color: var(--neon-green); font-family: 'Orbitron';">PARTNER REQUIREMENT</h4>
+      <ul style="color: #888; font-size: 0.85rem; list-style-type: '● '; padding-left: 15px;">
+        <li>Fixed Pilot Allocation: **$2,450**</li>
+        <li>SCADA Interoperability Testing</li>
+        <li>Technical Case Study Authorization</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div style="text-align: center; margin-top: 50px;">
+  <p style="font-size: 0.6rem; color: #333; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;">
+    // AUTHORITY: 13TH INNOVATIONS UNIT // CAGE: 188U9 //
+  </p>
+  
+  <a href="mailto:sales@valhallainnovations.com?subject=Inquiry: Municipal Pilot Program Slot&body=Requesting more information regarding the 2026 Pilot Program for CAGE: 188U9." class="btn-dispatch">
+    LEARN MORE: SECURE DISPATCH
+  </a>
 </div>
