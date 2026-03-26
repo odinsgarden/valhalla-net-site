@@ -53,12 +53,13 @@ layout: null
         <p style="color: var(--v-green); font-size: 0.7rem; letter-spacing: 3px;">[ MISSION PROFILE: DISCONNECTED // CAGE 188U9 ]</p>
         <h1>VALHALLA'S 13TH</h1>
         
-        <nav class="nav">
-            <a href="/architecture/">Architecture</a>
-            <a href="/pilot/">Pilot</a>
-            <a href="/vision/">Vision</a>
-            <a href="/about/">About</a>
-        </nav>
+        <nav style="width: 100%; border-bottom: 1px solid var(--v-border); background: rgba(0,0,0,0.9); padding: 15px 0; text-align: center;">
+    <a href="/" style="color: var(--neon-green); text-decoration: none; margin: 0 15px; font-family: 'Orbitron'; font-size: 0.7rem;">[ HOME ]</a>
+    <a href="/architecture/" style="color: var(--neon-green); text-decoration: none; margin: 0 15px; font-family: 'Orbitron'; font-size: 0.7rem;">[ ARCHITECTURE ]</a>
+    <a href="/pilot/" style="color: var(--neon-green); text-decoration: none; margin: 0 15px; font-family: 'Orbitron'; font-size: 0.7rem;">[ PILOT ]</a>
+    <a href="/vision/" style="color: var(--neon-green); text-decoration: none; margin: 0 15px; font-family: 'Orbitron'; font-size: 0.7rem;">[ VISION ]</a>
+    <a href="/about/" style="color: var(--neon-green); text-decoration: none; margin: 0 15px; font-family: 'Orbitron'; font-size: 0.7rem;">[ ABOUT ]</a>
+</nav>
 
         <img src="/web_site2.png" class="hero-img" alt="Command Hub">
         
