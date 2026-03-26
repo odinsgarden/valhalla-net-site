@@ -18,9 +18,11 @@ permalink: /pilot/
         h1 { font-family: 'Orbitron'; color: var(--v-green); letter-spacing: 5px; text-transform: uppercase; }
         .seal { float: right; width: 100px; margin: 0 0 20px 20px; border: 1px solid var(--v-green); box-shadow: 0 0 10px var(--v-green); }
         .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px; }
-        .card { border: 1px solid rgba(0, 255, 65, 0.1); padding: 15px; background: #050505; }
-        h3 { color: var(--v-green); font-family: 'Orbitron'; font-size: 0.8rem; }
-        .btn { background: var(--v-green); color: #000; padding: 12px 30px; text-decoration: none; font-weight: 900; font-family: 'Orbitron'; display: inline-block; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); margin-top: 20px; }
+        .card { border: 1px solid rgba(0, 255, 65, 0.1); padding: 20px; background: #050505; border-left: 2px solid var(--v-green); }
+        h3 { color: var(--v-green); font-family: 'Orbitron'; font-size: 0.8rem; margin-top: 0; }
+        ul { padding-left: 15px; margin-bottom: 0; }
+        li { color: #888; font-size: 0.8rem; margin-bottom: 8px; }
+        .btn { background: var(--v-green); color: #000; padding: 12px 30px; text-decoration: none; font-weight: 900; font-family: 'Orbitron'; display: inline-block; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0% 100%); margin-top: 30px; letter-spacing: 1px; }
     </style>
 </head>
 <body>
@@ -33,29 +35,33 @@ permalink: /pilot/
     </nav>
     <div class="content">
         <img src="/web_site3.png" class="seal">
-        <p style="color: var(--v-green); font-size: 0.6rem;">// ENROLLMENT: ACTIVE // SLOTS: 03 //</p>
+        <p style="color: var(--v-green); font-size: 0.6rem; letter-spacing: 3px;">// STATUS: ENROLLMENT ACTIVE // SLOTS: 03 //</p>
         <h1>Municipal Pilot</h1>
-        <p>Seeking three government partners for field validation of the THORVEIL hardware-enforced isolation layer.</p>
+        <p>Valhalla’s 13th Innovations Unit is identifying three municipal partners for final field validation of the <strong>THORVEIL</strong> hardware-enforced isolation layer.</p>
+        
         <div class="grid">
             <div class="card">
-                <h3>ASSETS</h3>
-                <ul style="font-size: 0.8rem; color: #888;">
-                    <li>High-Assurance Node</li>
-                    <li>Ghost-Layer OS</li>
+                <h3>DELIVERABLES</h3>
+                <ul>
+                    <li>High-Assurance Hardware Node</li>
+                    <li>Sovereign-OS Environment</li>
+                    <li>Direct Technical Integration</li>
                     <li>Zero-Persistence Audit</li>
                 </ul>
             </div>
             <div class="card">
-                <h3>COMMITMENT</h3>
-                <ul style="font-size: 0.8rem; color: #888;">
-                    <li>Allocation: $2,450</li>
+                <h3>REQUIREMENTS</h3>
+                <ul>
+                    <li>Vetted Strategic Access</li>
                     <li>SCADA Interop Feedback</li>
-                    <li>Case Study Access</li>
+                    <li>Resource Allocation</li>
+                    <li>Case Study Authorization</li>
                 </ul>
             </div>
         </div>
+        
         <div style="text-align: center;">
-            <a href="mailto:sales@valhallainnovations.com?subject=Pilot Program Application" class="btn">APPLY FOR SLOT</a>
+            <a href="mailto:sales@valhallainnovations.com?subject=Strategic Pilot Application - CAGE 188U9" class="btn">REQUEST PILOT ACCESS</a>
         </div>
     </div>
 </body>
